@@ -1,7 +1,17 @@
 /* ======================================
 Table of Contents:
 1. Global Styles
-2.
+    1a. Button Styles
+    1b. Background Color Styles
+    1c. Icon Styles
+2. Typography
+3. Header & Nav
+4. Banner Section
+5. Mobile Search Section
+6. Mobile App Download Section
+7. How It Works Section
+8. Categories Section
+9. Specials Section
 
 
 ========================================*/
@@ -31,4 +41,131 @@ Font Families
 
 }
 
+
+/* ======================================
+1a. Button Styles
+========================================*/
+.btn{
+
+}
+.btn-dwnld{
+    height: 31.35px;
+    width: 93.24px;
+    padding: 0;
+    border: none;
+}
+.btn-img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-none{
+    border: none;
+    padding: 0;
+}
+.btn-primary{
+    background-color: teal;
+    border-color: teal;
+}
+
+/* ======================================
+1b. Background Color Styles
+========================================*/
+.bg-white{
+    background-color: #fff;
+}
+.bg-ltgrn{
+    background-color: rgba(132, 194, 169, 0.30);
+
+}
+.bg-ltylw{
+    background-color: hsla(57, 77%, 83%, 0.5)
+
+}
+
+
+/* ======================================
+1c. Icon Styles
+========================================*/
+.bi.bi-search{
+    fill: #f09C46
+}
+/* ======================================
+2. Typography
+========================================*/
+
+.h1{
+    color: white;
+}
+.h2, .h3{
+    color: #4B6E43;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+
+}
+.h2{
+    font-size: 24px;
+
+}
+.h3{
+    font-size: 22px;
+}
+.h4{
+    color: #f09C46;
+    font-size: 14px;
+}
+.h5{
+
+}
+.p{
+    font-size: 11px;
+    text-align: center;
+}
+/* ======================================
+3. Header & Nav
+========================================*/
+
+
+/* ======================================
+4. Banner Section
+========================================*/
+.section.bnr{
+    background-color: black;
+    height: 50vw;
+}
+
+/* ======================================
+5. Mobile Search Section
+========================================*/
+.mobileSearch{
+    position: relative;
+
+}
+.mobileSearch .form-control{
+    border: none;
+}
+.mobileSearch .form-control::placeholder{
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+/* ======================================
+6. Mobile App Download Section
+========================================*/
+
+/* ======================================
+7. How It Works Section
+========================================*/
+
+/* ======================================
+8. Categories Section
+========================================*/
+
+/* ======================================
+9. Specials Section
+========================================*/
 

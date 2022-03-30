@@ -8,32 +8,183 @@
     <title>Meals on Mules | Home</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="css/reset.css">
+
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Staatliches&display=swap"
-        rel="stylesheet">'
-        
+        rel="stylesheet">
+
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid d-flex flex-row-reverse">
+                <!-- Cart & User Buttons -->
+                <div class="nav-buttons">
+                    <button class="button"><img src="img/icons/cart-fill.svg" alt=""></button>
+                    <button class="button"><img src="img/icons/person-fill.svg" alt=""></button>
+                </div>
 
+
+                <a class="navbar-brand" href="#"> <img src="img/icons/person-fill.svg" alt="" width="30" height="24">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar End -->
+    </header>
+    <!-- Header End -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="section bnr d-flex align-items-center justify-content-center">
+            <h1 class="h1">Hero Image</h1>
+        </section>
+        <div class="bg-ltgrn pt-4 pb-3">
+            <!-- Mobile Item Search Section -->
+            <section class="section mobileSearch mx-3 mb-3 bg-white ">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-none pe-2" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="28.37" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                </form>
+            </section>
+
+            <!-- Mobile Download App Section -->
+            <section class="section appDwnld px-3">
+                <h2 class="h2">Download the App</h2>
+                <p class="p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+
+                <div class="d-flex justify-content-around  align-items-center px-3">
+                    <a href="" class="btn btn-dwnld "><img class="btn-img" src="img/buttons/apple-btn.svg"
+                            alt=""></a>
+                    <a href="" class="btn  btn-dwnld "><img class="btn-img" src="img/buttons/google-btn.svg" alt=""></a>
+                </div>
+            </section>
+        </div>
+
+        <!-- How It Works Section -->
+        <section class="section explain d-flex flex-column bg-ltylw py-3">
+            <h3 class="h3">How It Works</h3>
+            <div class="d-flex flex-column align-items-center">
+                <img src="" alt="">
+                <p class="h4">Browse Products</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="" alt="">
+                <p class="h4">Add to Car</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="" alt="">
+                <p class="h4">We Deliver!</p>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section categories">
+
+            <div class="carousel">
+                <div class="category cat1">
+
+                    <p class="h5"></p>
+                </div>
+                <div class="category cat2">
+                    <p class="h5"></p>
+                </div>
+                <div class="category cat3">
+                    <p class="h5"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specials Section -->
+        <section class="section specials">
+
+            <div class="carousel">
+                <div class="items item1">
+                    <!-- Place Card Design Here -->
+                </div>
+                <div class="items item2">
+                    <!-- Place Card Design Here -->
+                </div>
+                <div class="items item3">
+                    <!-- Place Card Design Here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+    </footer>
     <!-- Scripts -->
+
     <!-- jQuery Slim Minified -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
         integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Main -->
     <script src="js/main.js"></script>
 </body>
