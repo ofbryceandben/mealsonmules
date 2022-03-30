@@ -121,7 +121,9 @@ Table of Contents:
 ========================================*/
 
 .h1 {
-    color: white;
+    font-size: 24px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
 }
 
 .h2,
@@ -236,6 +238,14 @@ Table of Contents:
 10. About Section
 ========================================*/
 
+.about.bnr {
+    background-image: url("../img/hero/carousel-img-3.jpg");
+    background-size: cover;
+    font-size: 24px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+}
+
 .h2.orange {
     line-height: 0px !important;
 }
@@ -265,6 +275,29 @@ Table of Contents:
 
 .bryce .d-flex .relative img {
     width: 25vw;
+    z-index: 1;
+}
+
+.mergan {
+    margin: 10%;
+}
+
+.mergan.d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    bottom: 10%;
+}
+
+.mergan.d-flex .relative {
+    width: 28vw;
+}
+
+.mergan.d-flex .relative img {
+    width: 23vw;
     z-index: 1;
 }
 
@@ -313,3 +346,10 @@ Table of Contents:
     width: 23vw;
     z-index: 1;
 }
+
+
+/* ======================================
+11. Footer
+========================================*/
+
+.footer .d-flex img {}
