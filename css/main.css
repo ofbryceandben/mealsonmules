@@ -12,9 +12,11 @@ Table of Contents:
 7. How It Works Section
 8. Categories Section
 9. Specials Section
+10. About Section 
 
 
 ========================================*/
+
 
 /* ? ===================================
 ? >>> VARIABLES <<<
@@ -38,102 +40,122 @@ Table of Contents:
 ?======================================= */
 
 
-
 /* ======================================
 1. Global Styles
 ========================================*/
-.body{
+
+.body {
     font-family: 'Sen', sans-serif;
     font-weight: 400;
+}
 
+.relative {
+    position: relative;
+    width: fit-content;
 }
 
 
 /* ======================================
 1a. Button Styles
 ========================================*/
-.btn{
 
-}
-.btn-dwnld{
+.btn {}
+
+.btn-dwnld {
     height: 31.35px;
     width: 93.24px;
     padding: 0;
     border: none;
 }
-.btn-img{
+
+.btn-img {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
-.btn-none{
+.btn-none {
     border: none;
     padding: 0;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: teal;
     border-color: teal;
 }
 
+
 /* ======================================
 1b. Background Color Styles
 ========================================*/
-.bg-white{
+
+.bg-white {
     background-color: #fff;
 }
-.bg-ltgrn30{
+
+.bg-ltgrn30 {
     background-color: rgba(132, 194, 169, 0.30);
-
 }
-.bg-ltgrn{
+
+.bg-ltgrn {
     background-color: #97C45F;
-
 }
-.bg-ltylw{
-    background-color: hsla(57, 77%, 83%, 0.5)
 
+.bg-ltylw {
+    background-color: hsla(57, 77%, 83%, 0.5)
 }
 
 
 /* ======================================
 1c. Icon Styles
 ========================================*/
-.bi.bi-search{
+
+.bi.bi-search {
     fill: #f09C46
 }
+
+
 /* ======================================
 2. Typography
 ========================================*/
 
-.h1{
+.h1 {
     color: white;
 }
-.h2, .h3{
+
+.h2,
+.h3 {
     color: #4B6E43;
     font-family: 'Staatliches', cursive;
     text-align: center;
-
 }
-.h2{
+
+.h2 {
     font-size: 24px;
-
 }
-.h3{
+
+.h3 {
     font-size: 22px;
 }
-.h4{
+
+.h4 {
     color: #f09C46;
     font-size: 14px;
 }
-.h5{
 
-}
-.p{
+.h5 {}
+
+.p {
     font-size: 11px;
     text-align: center;
 }
+
+.orange {
+    color: #F09C46;
+}
+
+
 /* ======================================
 3. Header & Nav
 ========================================*/
@@ -142,59 +164,152 @@ Table of Contents:
 /* ======================================
 4. Banner Section
 ========================================*/
-.section.bnr{
+
+.section.bnr {
     background-color: black;
     height: 50vw;
 }
 
+
 /* ======================================
 5. Mobile Search Section
 ========================================*/
-.mobileSearch{
-    position: relative;
 
+.mobileSearch {
+    position: relative;
 }
-.mobileSearch .form-control{
+
+.mobileSearch .form-control {
     border: none;
 }
-.mobileSearch .form-control::placeholder{
+
+.mobileSearch .form-control::placeholder {
     color: #4B6E43;
     font-size: 14px;
     font-family: 'Sen', sans-serif;
     font-weight: 400;
 }
 
+
 /* ======================================
 6. Mobile App Download Section
 ========================================*/
 
+
 /* ======================================
 7. How It Works Section
 ========================================*/
-.explain .d-flex{
+
+.explain .d-flex {
     position: relative;
 }
-.explain .d-flex img{
+
+.explain .d-flex img {
     width: 30vw;
-
 }
-.explain .d-flex img, .explain .d-flex .h4{
 
+.explain .d-flex img,
+.explain .d-flex .h4 {
     z-index: 1;
 }
+
 .explain .d-flex .bg-ltgrn {
     position: absolute;
     width: 30vw;
     height: 30vw;
     border-radius: 50%;
     top: 0
-
 }
+
+
 /* ======================================
 8. Categories Section
 ========================================*/
+
 
 /* ======================================
 9. Specials Section
 ========================================*/
 
+
+/* ======================================
+10. About Section
+========================================*/
+
+.h2.orange {
+    line-height: 0px !important;
+}
+
+.about {
+    margin-top: 3%;
+    text-align: left;
+}
+
+.bryce {
+    margin: 10%;
+}
+
+.bryce .d-flex .relative .bg-ltgrn {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    bottom: 1%;
+}
+
+.bryce .d-flex .relative {
+    width: 28vw;
+}
+
+.bryce .d-flex .relative img {
+    width: 25vw;
+    z-index: 1;
+}
+
+.nicole .d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    bottom: 3%;
+}
+
+.nicole .d-flex .relative img {
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+}
+
+.nicole .d-flex .relative {
+    width: 22vw;
+}
+
+.nicole {
+    margin: 10%;
+}
+
+.eleanor {
+    margin: 10%;
+}
+
+.eleanor.d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    bottom: 10%;
+}
+
+.eleanor.d-flex .relative {
+    width: 28vw;
+}
+
+.eleanor .d-flex .relative img {
+    width: 23vw;
+    z-index: 1;
+}
