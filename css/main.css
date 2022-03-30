@@ -83,8 +83,12 @@ Table of Contents:
 .bg-white{
     background-color: #fff;
 }
-.bg-ltgrn{
+.bg-ltgrn30{
     background-color: rgba(132, 194, 169, 0.30);
+
+}
+.bg-ltgrn{
+    background-color: #97C45F;
 
 }
 .bg-ltylw{
@@ -167,7 +171,25 @@ Table of Contents:
 /* ======================================
 7. How It Works Section
 ========================================*/
+.explain .d-flex{
+    position: relative;
+}
+.explain .d-flex img{
+    width: 30vw;
 
+}
+.explain .d-flex img, .explain .d-flex .h4{
+
+    z-index: 1;
+}
+.explain .d-flex .bg-ltgrn {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    top: 0
+
+}
 /* ======================================
 8. Categories Section
 ========================================*/
