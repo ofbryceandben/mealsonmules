@@ -6,9 +6,21 @@ Table of Contents:
 ========================================*/
 $(document).ready(function(){
 
-    $('.carousel').flickity({
+    $('.cat-carousel').flickity({
         // options
-        cellAlign: 'left',
-        contain: true
+        contain: true,
+        prevNextButtons: false,
+        wrapAround: true,
+        cellAlign: 'center',
+        pageDots: false
+      });
+
+    $('.special-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true,
+        pageDots: false,
+        autoPlay: true
       });
 });

@@ -17,13 +17,149 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Staatliches&display=swap"
         rel="stylesheet">'
-        
+
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="container-fluid d-flex flex-row-reverse align-items-start relative pt-5 pb-1">
+
+                <!-- Cart Button -->
+                <button class="button btn-none"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="27"
+                        fill="#F09C46" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg></button>
+
+                <a class="navbar-brand absolute m-0 p-0" href="#">
+                    <div class="relative">
+                        <img class="img" src="img/logo/logo-wordmark 1.svg" alt="">
+                    </div>
+                </a>
+                <!-- Nav Mobile Button -->
+                <button class="navbar-toggler btn-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.857143 4.40816H23.1429C23.6163 4.40816 24 3.96961 24 3.42857V0.979592C24 0.438551 23.6163 0 23.1429 0H0.857143C0.383732 0 0 0.438551 0 0.979592V3.42857C0 3.96961 0.383732 4.40816 0.857143 4.40816ZM0.857143 14.2041H23.1429C23.6163 14.2041 24 13.7655 24 13.2245V10.7755C24 10.2345 23.6163 9.79592 23.1429 9.79592H0.857143C0.383732 9.79592 0 10.2345 0 10.7755V13.2245C0 13.7655 0.383732 14.2041 0.857143 14.2041ZM0.857143 24H23.1429C23.6163 24 24 23.5614 24 23.0204V20.5714C24 20.0304 23.6163 19.5918 23.1429 19.5918H0.857143C0.383732 19.5918 0 20.0304 0 20.5714V23.0204C0 23.5614 0.383732 24 0.857143 24Z"
+                            fill="#F09C46" />
+                    </svg></button>
+
+                <div class="collapse navbar-collapse bg-white px-3 pb-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto pb-2 pb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-none pe-2" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="28.37" fill="currentColor" class="bi bi-search"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar End -->
+    </header>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button class="accordion-button collapsed bg-ltgrn h4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Our Company
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-ltgrn h4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Customer Service
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-ltgrn h4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Quick Links
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex bg-teal px-3 py-2">
+            <div>
+                <p class="text-white p">Download Our App</p>
+                <div class="d-flex">
+                    <img src="img/buttons/apple-btn.svg">
+                    <img src="img/buttons/google-btn.svg">
+                </div>
+            </div>
+    
+            <div>
+                <div class="d-flex flex-column">
+                    <p class="text-white p">Follow Us</p>
+                    <ul class="d-flex">
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Scripts -->
     <!-- jQuery Slim Minified -->
