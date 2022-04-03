@@ -1,0 +1,485 @@
+/* ======================================
+Table of Contents:
+1. Global Styles
+    1a. Button Styles
+    1b. Background Color Styles
+    1c. Icon Styles
+2. Typography
+3. Header & Nav
+4. Home Banner Section
+5. Mobile Search Section
+6. Mobile App Download Section
+7. How It Works Section
+8. Categories Section
+9. Specials Section
+10. About Section 
+11. Footer
+
+
+========================================*/
+
+
+/* ? ===================================
+? >>> VARIABLES <<<
+    Font Families:
+
+    font-family: 'Sen', sans-serif;
+     font-weight: 400;
+     font-weight: 700;
+     font-weight: 800;
+
+    font-family: 'Staatliches', cursive;
+
+    Colors:
+        Yellow: #F5F2B1
+        Dark Green: #4B6E43
+        Light Green: #97C45F
+        Orange: #F09C46
+        Teal: #36676A
+
+
+?======================================= */
+
+
+/* ======================================
+1. Global Styles
+========================================*/
+
+.body {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+.relative {
+    position: relative;
+
+}
+.absolute{
+    position: absolute;
+}
+
+
+/* ======================================
+1a. Button Styles
+========================================*/
+
+.btn {}
+
+
+
+.btn-img {
+    width  : auto;
+    height : 10vw;
+    max-height: 76px;
+    padding: 0;
+    margin : 0;
+}
+
+.btn-none {
+    border          : none;
+    padding         : 0;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: teal;
+    border-color    : teal;
+}
+
+
+/* ======================================
+1b. Background Color Styles
+========================================*/
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-ltgrn30 {
+    background-color: rgba(132, 194, 169, 0.30);
+}
+
+.bg-ltgrn {
+    background-color: #97C45F;
+}
+.bg-teal {
+    background-color: #36676A;
+}
+
+.bg-ltylw {
+    background-color: hsla(57, 77%, 83%, 0.5)
+}
+.bg-orange30 {
+    background-color:rgba(240, 155, 70, 0.30);
+}
+
+
+/* ======================================
+1c. Icon Styles
+========================================*/
+
+.icon {
+    fill: #f09C46
+}
+
+
+/* ======================================
+2. Typography
+========================================*/
+.h1, .h2, .h3, .h4, .h5{
+    margin:0;
+}
+.h1 {
+    font-size  : 24px;
+    font-family: 'Staatliches', cursive;
+}
+
+.h2,
+.h3 {
+
+    font-family: 'Staatliches', cursive;
+    text-align : center;
+}
+
+.h2 {
+    font-size: clamp(24px, 5vw, 38px);
+}
+
+.h3 {
+    font-size: clamp(22px, 5vw, 56px);
+}
+
+.h4 {
+    font-size: clamp(14px, 3vw, 32px);
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: clamp(16px, 3vw, 36px);
+    font-family: 'Staatliches', cursive;
+}
+
+.p {
+    font-size : clamp(11px, 3vw, 16px);;
+    text-align: center;
+}
+.yellow{
+    color      : #F5F2B1;
+}
+.orange {
+    color: #F09C46;
+}
+.green {
+    color      : #4B6E43;
+}
+
+
+/* ======================================
+3. Header & Nav
+========================================*/
+.header .navbar {
+    height: 100px;
+
+}
+.header .navbar {
+    height: 100px;
+
+}
+
+.header .navbar .container-fluid .navbar-brand.absolute {
+    top: -5px;
+    left: calc(50vw - 67.5px);
+    z-index: 1000;
+}
+.header .navbar .container-fluid .navbar-brand .relative {
+    background-color: #fff;
+    border-radius   : 50%;
+}
+
+.header .navbar .container-fluid .collapse {
+    z-index: 999;
+}
+
+.header .navbar .container-fluid .collapse .form-control {
+    border: none;
+}
+
+.header .navbar .container-fluid .collapse .form-control::placeholder {
+    color      : #4B6E43;
+    font-size  : 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/* ======================================
+4. Home Banner Section
+========================================*/
+
+.home.bnr {
+    background-image     : url('../img/hero/home-bnr-bg.jpg');
+    background-size      : 100%;
+    background-position-y: center;
+    height               : 50vw;
+}
+
+
+/* ======================================
+5. Mobile Search Section
+========================================*/
+
+
+.mobileSearch .form-control {
+    border: none;
+}
+
+.mobileSearch .form-control::placeholder {
+    color      : #4B6E43;
+    font-size  : 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+
+
+/* ======================================
+6. Mobile App Download Section
+========================================*/
+
+
+/* ======================================
+7. How It Works Section
+========================================*/
+
+
+.explain .relative img{
+    width: auto;
+ }
+
+.explain .d-flex img,
+.explain .d-flex .h4 {
+    z-index: 1;
+}
+
+.explain .d-flex .h4 {
+   margin-top: 10vw ;
+}
+.explain .d-flex .bg-ltgrn {
+    width        : 30vw;
+    height       : 30vw;
+    border-radius: 50%;
+    top          : 0
+}
+.explain .d-flex .arrow {
+   height: 130px;
+   width: auto;
+}
+.explain .browse .arrow {
+    right: 15vw;
+    top: 25vw;
+}
+.explain .browse img{
+    height: 20vw;
+ 
+ }
+.explain .add .arrow {
+    left: 15vw;
+    top: 50vw;
+}
+.explain .add .bg-ltgrn {
+   top: 10vw;
+}
+
+.explain .add img{
+   height: 40vw;
+}
+
+.explain .deliver .bg-ltgrn   {
+    top: 19vw;
+    left: calc(50vw - 15vw);
+ }
+.explain .deliver img{
+   height: 40vw;
+
+}
+
+
+/* ======================================
+8. Categories Section
+========================================*/
+
+.categories .cat-carousel .category{
+    width: 50vw;
+    min-width: 178px;
+    height: 25vw;
+    min-height: 93px;
+    background-color: black;
+    margin: 0 8px;
+}
+.categories .cat-carousel .flickity-viewport{
+    height: 25vw  !important;
+    min-height: 100px;
+
+}
+
+
+
+/* ======================================
+9. Specials Section
+========================================*/
+.specials .special-carousel .flickity-button {
+  background: transparent;
+}
+
+.specials .special-carousel .flickity-slider{
+/* margin-left: 5vw; */
+}
+
+element.style {
+}
+.specials .special-carousel .flickity-prev-next-button.previous {
+    left: 0px;
+}
+.specials .special-carousel .flickity-prev-next-button.next {
+    right: 0px;
+}
+.specials .special-carousel .flickity-button-icon .arrow{
+  fill: #f09C46;
+  width: 25px;
+  height: 41px;
+}
+.specials .special-carousel .items{
+    width: 140px;
+    height: 150px;
+    background-color: #4B6E43;
+    margin-left: 10px ;
+}
+
+
+/* ======================================
+10. About Section
+========================================*/
+
+.about.bnr {
+    background-image: url("../img/hero/carousel-img-3.jpg");
+    background-size : cover;
+    font-size       : 24px;
+    color           : #F5F2B1;
+    font-family     : 'Staatliches', cursive;
+}
+
+.h2.orange {
+    line-height: 0px !important;
+}
+
+.about {
+    margin-top: 3%;
+    text-align: left;
+}
+
+.bryce {
+    margin: 10%;
+}
+
+.bryce .d-flex .relative .bg-ltgrn {
+    width        : 20vw;
+    height       : 20vw;
+    border-radius: 50%;
+    position     : absolute;
+    z-index      : -1;
+    left         : 10%;
+    bottom       : 1%;
+}
+
+.bryce .d-flex .relative {
+    width: 28vw;
+}
+
+.bryce .d-flex .relative img {
+    width  : 25vw;
+    z-index: 1;
+}
+
+.mergan {
+    margin: 10%;
+}
+
+.mergan.d-flex .relative .bg-ltgrn {
+    width        : 22vw;
+    height       : 22vw;
+    border-radius: 50%;
+    position     : absolute;
+    z-index      : -1;
+    left         : -3%;
+    bottom       : 10%;
+}
+
+.mergan.d-flex .relative {
+    width: 28vw;
+}
+
+.mergan.d-flex .relative img {
+    width  : 23vw;
+    z-index: 1;
+}
+
+.nicole .d-flex .relative .bg-ltgrn {
+    width        : 22vw;
+    height       : 22vw;
+    border-radius: 50%;
+    position     : absolute;
+    z-index      : -1;
+    bottom       : 3%;
+}
+
+.nicole .d-flex .relative img {
+    width  : 20vw;
+    height : 20vw;
+    z-index: 1;
+}
+
+.nicole .d-flex .relative {
+    width: 22vw;
+}
+
+.nicole {
+    margin: 10%;
+}
+
+.eleanor {
+    margin: 10%;
+}
+
+.eleanor.d-flex .relative .bg-ltgrn {
+    width        : 22vw;
+    height       : 22vw;
+    border-radius: 50%;
+    position     : absolute;
+    z-index      : -1;
+    left         : -3%;
+    bottom       : 10%;
+}
+
+.eleanor.d-flex .relative {
+    width: 28vw;
+}
+
+.eleanor .d-flex .relative img {
+    width  : 23vw;
+    z-index: 1;
+}
+
+
+/* ======================================
+11. Footer
+========================================*/
+.accordion-button:not(.collapsed), .footer .accordion-button:focus{
+    color:#4B6E43;
+    background-color: rgba(151, 196, 95, 0.50);
+    border-color: #4B6E43;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after, .accordion-button::after{
+    background-image: url("../img/icons/1Vector.svg") ;
+}
+.footer .d-flex img {}
