@@ -479,7 +479,7 @@ element.style {
 
 
 /* ======================================
-12. Footer/Accordian
+11. Footer/Accordian
 ========================================*/
 
 /*Accordian*/ 
@@ -516,13 +516,20 @@ element.style {
 
 .footer .d-flex img {
     width: 22vw;
+    max-height: 30px;
     padding-right: 1vw;
 }
 
 .footer .d-flex .p {
-    margin-left: 10vw;
-    padding-right: 17vw;
     margin-bottom: 0.5vh !important;
+}
+
+.footer .d-flex .social, .footer .d-flex .download{
+        width: 40vw;
+        max-width: 300px;
+}
+.footer .d-flex .social ul{
+        width: 100%;
 }
 
 .copy {
@@ -532,6 +539,7 @@ element.style {
     margin-bottom: 0vw !important;
 
 }
+
 
 .bi {
     color: #F5F2B1;
