@@ -366,19 +366,25 @@ element.style {
     font-size       : 24px;
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
+    height          : 40vh;
 }
 
 .h2.orange {
-    line-height: 0px !important;
+    line-height : 0px !important;
+    padding-bottom: 2vh;
+}
+
+.name-right {
+    margin-right: 10px;
 }
 
 .about {
-    margin-top: 3%;
-    text-align: left;
+    margin-top  : 3%;
+    text-align  : left;
 }
 
 .bryce {
-    margin: 10%;
+    margin  : 10vw;
 }
 
 .bryce .d-flex .relative .bg-ltgrn {
@@ -410,12 +416,12 @@ element.style {
     border-radius: 50%;
     position     : absolute;
     z-index      : -1;
-    left         : -3%;
+    left         : 2%;
     bottom       : 10%;
 }
 
 .mergan.d-flex .relative {
-    width: 28vw;
+    width   : 28vw;
 }
 
 .mergan.d-flex .relative img {
@@ -439,15 +445,40 @@ element.style {
 }
 
 .nicole .d-flex .relative {
-    width: 22vw;
+    width   : 22vw;
 }
 
 .nicole {
-    margin: 10%;
+    margin  : 10%;
 }
 
+.kellee {
+    margin  : 10vw;
+}
+
+.kellee.d-flex .relative .bg-ltgrn {
+    width        : 20vw;
+    height       : 20vw;
+    border-radius: 50%;
+    position     : absolute;
+    z-index      : -1;
+    right        : -4vw;
+    bottom       : -45%;
+}
+
+.kellee .d-flex .relative {
+    width: 28vw;
+}
+
+.kellee.d-flex .relative img {
+    width  : 25vw;
+    z-index: 1;
+}
+
+
+
 .eleanor {
-    margin: 10%;
+    margin  : 10%;
 }
 
 .eleanor.d-flex .relative .bg-ltgrn {
@@ -461,7 +492,7 @@ element.style {
 }
 
 .eleanor.d-flex .relative {
-    width: 28vw;
+    width: 22vw;
 }
 
 .eleanor .d-flex .relative img {
