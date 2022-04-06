@@ -161,7 +161,7 @@ Table of Contents:
 }
 
 .p {
-    font-size : clamp(11px, 3vw, 16px);;
+    font-size : clamp(11px, 3vw, 16px);
     text-align: center;
 }
 .yellow{
@@ -172,6 +172,11 @@ Table of Contents:
 }
 .green {
     color      : #4B6E43;
+}
+
+.shop-p {
+    font-family: 'Sen', sans-serif;
+    font-size : clamp(11px, 3vw, 16px);
 }
 
 
@@ -538,6 +543,15 @@ element.style {
 /* ======================================
 1. Shop Page
 ========================================*/
+.shop.bnr {
+    background-image: url("../img/hero/carousel-img-8.jpg");
+    background-size : cover;
+    font-size       : 29px;
+    color           : #F5F2B1;
+    font-family     : 'Staatliches', cursive;
+    height          : 25vh;
+
+}
 
 .row {
     margin: auto;
@@ -546,4 +560,25 @@ element.style {
 
 .card {
 border: none;
+}
+
+.add-icon {
+    position: relative;
+    top: 5vh;
+}
+
+.card-text{ 
+    margin-bottom: 0 !important;
+}
+.mobileSearch .form-control  {
+    margin-top: 1vh;
+    border: none;
+    background-color: #97C45F;
+}
+
+.mobileSearch .form-control .shop::placeholder {
+    color      : #4B6E43;
+    font-size  : 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
 }
