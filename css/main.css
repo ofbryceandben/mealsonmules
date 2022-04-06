@@ -12,8 +12,9 @@ Table of Contents:
 7. How It Works Section
 8. Categories Section
 9. Specials Section
-10. About Section 
+10. About Page 
 11. Footer/Accordian
+12. Shop Page
 
 
 ========================================*/
@@ -366,10 +367,8 @@ element.style {
     font-size       : 24px;
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
-<<<<<<< Updated upstream
-=======
     height          : 25vh;
->>>>>>> Stashed changes
+
 }
 
 .h2.orange {
@@ -532,4 +531,19 @@ element.style {
 .bi {
     color: #F5F2B1;
     width: 6vw;
+}
+
+
+
+/* ======================================
+1. Shop Page
+========================================*/
+
+.row {
+    margin: auto;
+    margin-top: 10vw;
+}
+
+.card {
+border: none;
 }
