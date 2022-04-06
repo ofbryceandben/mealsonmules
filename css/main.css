@@ -13,7 +13,7 @@ Table of Contents:
 8. Categories Section
 9. Specials Section
 10. About Section 
-11. Footer
+11. Footer/Accordian
 
 
 ========================================*/
@@ -366,6 +366,10 @@ element.style {
     font-size       : 24px;
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
+<<<<<<< Updated upstream
+=======
+    height          : 25vh;
+>>>>>>> Stashed changes
 }
 
 .h2.orange {
@@ -471,8 +475,11 @@ element.style {
 
 
 /* ======================================
-11. Footer
+12. Footer/Accordian
 ========================================*/
+
+/*Accordian*/ 
+
 .accordion-button:not(.collapsed), .footer .accordion-button:focus{
     color:#4B6E43;
     background-color: rgba(151, 196, 95, 0.50);
@@ -482,4 +489,47 @@ element.style {
 .accordion-button:not(.collapsed)::after, .accordion-button::after{
     background-image: url("../img/icons/1Vector.svg") ;
 }
-.footer .d-flex img {}
+
+.accordion-body {
+    background-color: rgba(151, 196, 95, .3);
+}
+
+.accordion-body a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.accordion-body a:hover {
+    color:rgba(151, 196, 95, 0.50)
+}
+
+
+/* Footer */
+.footer p {
+    color: #F5F2B1;
+
+}
+
+.footer .d-flex img {
+    width: 22vw;
+    padding-right: 1vw;
+}
+
+.footer .d-flex .p {
+    margin-left: 10vw;
+    padding-right: 17vw;
+    margin-bottom: 0.5vh !important;
+}
+
+.copy {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw !important;
+
+}
+
+.bi {
+    color: #F5F2B1;
+    width: 6vw;
+}
