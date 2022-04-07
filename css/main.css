@@ -558,26 +558,8 @@ element.style {
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
     height          : 25vh;
-
 }
 
-.row {
-    margin: auto;
-    margin-top: 10vw;
-}
-
-.card {
-border: none;
-}
-
-.add-icon {
-    position: relative;
-    top: 5vh;
-}
-
-.card-text{ 
-    margin-bottom: 0 !important;
-}
 .mobileSearch .form-control  {
     margin-top: 1vh;
     border: none;
@@ -590,3 +572,15 @@ border: none;
     font-family: 'Sen', sans-serif;
     font-weight: 700;
 }
+
+.card {
+  border: none;
+  max-width: 120px;
+  height: 100%;
+  margin: auto;
+}
+
+.card:last-child {
+  margin: 12px;
+}
+
