@@ -36,7 +36,7 @@ function apiLoad() {
         <div class="card-body">
           <p class="card-title">${products.name}</p>
           <div class="d-flex justify-content-between">
-            <p class="card-text">${products.retail}</p>
+            <p class="card-text">$${products.retail}/unit</p>
             <svg class="add-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#97C45F"
               class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
               <path
