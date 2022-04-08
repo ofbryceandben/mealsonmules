@@ -368,11 +368,12 @@ element.style {
 
 .about.bnr {
     background-image: url("../img/hero/carousel-img-3.jpg");
-    background-size : cover;
     font-size       : 24px;
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
-    height          : 40vh;
+    background-size      : 100%;
+    background-position-y: center;
+    height               : 50vw;
 }
 
 .h2.orange {
@@ -582,11 +583,12 @@ element.style {
 ========================================*/
 .shop.bnr {
     background-image: url("../img/hero/carousel-img-8.jpg");
-    background-size : cover;
     font-size       : 29px;
     color           : #F5F2B1;
     font-family     : 'Staatliches', cursive;
-    height          : 25vh;
+    background-size      : 100%;
+    background-position-y: center;
+    height               : 50vw;
 
 }
 
