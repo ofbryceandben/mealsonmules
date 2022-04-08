@@ -12,8 +12,10 @@ Table of Contents:
 7. How It Works Section
 8. Categories Section
 9. Specials Section
-10. About Section 
-11. Footer
+10. About Page 
+11. Footer/Accordian
+12. Shop Page
+13. Media Queries 
 
 
 ========================================*/
@@ -52,9 +54,9 @@ Table of Contents:
 
 .relative {
     position: relative;
-
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
 
@@ -65,25 +67,23 @@ Table of Contents:
 
 .btn {}
 
-
-
 .btn-img {
-    width  : auto;
-    height : 10vw;
+    width: auto;
+    height: 10vw;
     max-height: 76px;
     padding: 0;
-    margin : 0;
+    margin: 0;
 }
 
 .btn-none {
-    border          : none;
-    padding         : 0;
+    border: none;
+    padding: 0;
     background-color: transparent;
 }
 
 .btn-primary {
     background-color: teal;
-    border-color    : teal;
+    border-color: teal;
 }
 
 
@@ -102,6 +102,7 @@ Table of Contents:
 .bg-ltgrn {
     background-color: #97C45F;
 }
+
 .bg-teal {
     background-color: #36676A;
 }
@@ -109,8 +110,9 @@ Table of Contents:
 .bg-ltylw {
     background-color: hsla(57, 77%, 83%, 0.5)
 }
+
 .bg-orange30 {
-    background-color:rgba(240, 155, 70, 0.30);
+    background-color: rgba(240, 155, 70, 0.30);
 }
 
 
@@ -126,19 +128,24 @@ Table of Contents:
 /* ======================================
 2. Typography
 ========================================*/
-.h1, .h2, .h3, .h4, .h5{
-    margin:0;
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    margin: 0;
 }
+
 .h1 {
-    font-size  : 24px;
+    font-size: 24px;
     font-family: 'Staatliches', cursive;
 }
 
 .h2,
 .h3 {
-
     font-family: 'Staatliches', cursive;
-    text-align : center;
+    text-align: center;
 }
 
 .h2 {
@@ -160,30 +167,39 @@ Table of Contents:
 }
 
 .p {
-    font-size : clamp(11px, 3vw, 16px);;
+    font-size: clamp(11px, 3vw, 16px);
     text-align: center;
 }
-.yellow{
-    color      : #F5F2B1;
+
+.yellow {
+    color: #F5F2B1;
 }
+
 .orange {
     color: #F09C46;
 }
+
 .green {
-    color      : #4B6E43;
+    color: #4B6E43;
+}
+
+.shop-p {
+    font-family: 'Sen', sans-serif;
+    font-size: clamp(11px, 3vw, 16px);
 }
 
 
 /* ======================================
 3. Header & Nav
 ========================================*/
+
 .header .navbar {
     height: 100px;
-
+    font-family: 'Sen', sans-serif;
 }
+
 .header .navbar {
     height: 100px;
-
 }
 
 .header .navbar .container-fluid .navbar-brand.absolute {
@@ -191,9 +207,10 @@ Table of Contents:
     left: calc(50vw - 67.5px);
     z-index: 1000;
 }
+
 .header .navbar .container-fluid .navbar-brand .relative {
     background-color: #fff;
-    border-radius   : 50%;
+    border-radius: 50%;
 }
 
 .header .navbar .container-fluid .collapse {
@@ -205,12 +222,45 @@ Table of Contents:
 }
 
 .header .navbar .container-fluid .collapse .form-control::placeholder {
-    color      : #4B6E43;
-    font-size  : 14px;
+    color: #4B6E43;
+    font-size: 14px;
     font-family: 'Sen', sans-serif;
     font-weight: 700;
 }
 
+
+/*======Desktop Nav Bar===========*/
+
+@media (min-width: 200px) {
+    .nav-item.d {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .img.m {
+        display: none;
+    }
+    .nav-item.d {
+        display: contents;
+        text-decoration: none;
+    }
+    .nav {
+        font-family: 'Sen', sans-serif;
+        background-color: #36676A;
+    }
+    .nav-link.d {
+        color: #F5F2B1 !important;
+    }
+    .absolute.img.d {
+        top: -5px;
+        left: calc(50vw - 67.5px);
+        z-index: 1000;
+    }
+}
+
+
+/*====== Desktop Nav Bread Crumb ========*/
 
 
 /* ======================================
@@ -218,10 +268,10 @@ Table of Contents:
 ========================================*/
 
 .home.bnr {
-    background-image     : url('../img/hero/home-bnr-bg.jpg');
-    background-size      : 100%;
+    background-image: url('../img/hero/home-bnr-bg.jpg');
+    background-size: 100%;
     background-position-y: center;
-    height               : 50vw;
+    height: 50vw;
 }
 
 
@@ -229,14 +279,13 @@ Table of Contents:
 5. Mobile Search Section
 ========================================*/
 
-
 .mobileSearch .form-control {
     border: none;
 }
 
 .mobileSearch .form-control::placeholder {
-    color      : #4B6E43;
-    font-size  : 14px;
+    color: #4B6E43;
+    font-size: 14px;
     font-family: 'Sen', sans-serif;
     font-weight: 700;
 }
@@ -251,10 +300,9 @@ Table of Contents:
 7. How It Works Section
 ========================================*/
 
-
-.explain .relative img{
+.explain .relative img {
     width: auto;
- }
+}
 
 .explain .d-flex img,
 .explain .d-flex .h4 {
@@ -262,45 +310,50 @@ Table of Contents:
 }
 
 .explain .d-flex .h4 {
-   margin-top: 10vw ;
+    margin-top: 10vw;
 }
+
 .explain .d-flex .bg-ltgrn {
-    width        : 30vw;
-    height       : 30vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
-    top          : 0
+    top: 0
 }
+
 .explain .d-flex .arrow {
-   height: 130px;
-   width: auto;
+    height: 130px;
+    width: auto;
 }
+
 .explain .browse .arrow {
     right: 15vw;
     top: 25vw;
 }
-.explain .browse img{
+
+.explain .browse img {
     height: 20vw;
- 
- }
+}
+
 .explain .add .arrow {
     left: 15vw;
     top: 50vw;
 }
+
 .explain .add .bg-ltgrn {
-   top: 10vw;
+    top: 10vw;
 }
 
-.explain .add img{
-   height: 40vw;
+.explain .add img {
+    height: 40vw;
 }
 
-.explain .deliver .bg-ltgrn   {
+.explain .deliver .bg-ltgrn {
     top: 19vw;
     left: calc(50vw - 15vw);
- }
-.explain .deliver img{
-   height: 40vw;
+}
 
+.explain .deliver img {
+    height: 40vw;
 }
 
 
@@ -308,7 +361,7 @@ Table of Contents:
 8. Categories Section
 ========================================*/
 
-.categories .cat-carousel .category{
+.categories .cat-carousel .category {
     width: 50vw;
     min-width: 178px;
     height: 25vw;
@@ -316,43 +369,46 @@ Table of Contents:
     background-color: black;
     margin: 0 8px;
 }
-.categories .cat-carousel .flickity-viewport{
-    height: 25vw  !important;
+
+.categories .cat-carousel .flickity-viewport {
+    height: 25vw !important;
     min-height: 100px;
-
 }
-
 
 
 /* ======================================
 9. Specials Section
 ========================================*/
+
 .specials .special-carousel .flickity-button {
-  background: transparent;
+    background: transparent;
 }
 
-.specials .special-carousel .flickity-slider{
-/* margin-left: 5vw; */
+.specials .special-carousel .flickity-slider {
+    /* margin-left: 5vw; */
 }
 
-element.style {
-}
+element.style {}
+
 .specials .special-carousel .flickity-prev-next-button.previous {
     left: 0px;
 }
+
 .specials .special-carousel .flickity-prev-next-button.next {
     right: 0px;
 }
-.specials .special-carousel .flickity-button-icon .arrow{
-  fill: #f09C46;
-  width: 25px;
-  height: 41px;
+
+.specials .special-carousel .flickity-button-icon .arrow {
+    fill: #f09C46;
+    width: 25px;
+    height: 41px;
 }
-.specials .special-carousel .items{
+
+.specials .special-carousel .items {
     width: 140px;
     height: 150px;
     background-color: #4B6E43;
-    margin-left: 10px ;
+    margin-left: 10px;
 }
 
 
@@ -362,15 +418,16 @@ element.style {
 
 .about.bnr {
     background-image: url("../img/hero/carousel-img-3.jpg");
-    background-size : cover;
-    font-size       : 24px;
-    color           : #F5F2B1;
-    font-family     : 'Staatliches', cursive;
-    height          : 40vh;
+    font-size: 24px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
 }
 
 .h2.orange {
-    line-height : 0px !important;
+    line-height: 0px !important;
     padding-bottom: 2vh;
 }
 
@@ -378,23 +435,18 @@ element.style {
     margin-right: 10px;
 }
 
-.about {
-    margin-top  : 3%;
-    text-align  : left;
-}
-
 .bryce {
-    margin  : 10vw;
+    margin: 10vw;
 }
 
 .bryce .d-flex .relative .bg-ltgrn {
-    width        : 20vw;
-    height       : 20vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
-    position     : absolute;
-    z-index      : -1;
-    left         : 10%;
-    bottom       : 1%;
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    bottom: 1%;
 }
 
 .bryce .d-flex .relative {
@@ -402,7 +454,7 @@ element.style {
 }
 
 .bryce .d-flex .relative img {
-    width  : 25vw;
+    width: 25vw;
     z-index: 1;
 }
 
@@ -411,59 +463,59 @@ element.style {
 }
 
 .mergan.d-flex .relative .bg-ltgrn {
-    width        : 22vw;
-    height       : 22vw;
+    width: 22vw;
+    height: 22vw;
     border-radius: 50%;
-    position     : absolute;
-    z-index      : -1;
-    left         : 2%;
-    bottom       : 10%;
+    position: absolute;
+    z-index: -1;
+    left: 2%;
+    bottom: 10%;
 }
 
 .mergan.d-flex .relative {
-    width   : 28vw;
+    width: 28vw;
 }
 
 .mergan.d-flex .relative img {
-    width  : 23vw;
+    width: 23vw;
     z-index: 1;
 }
 
 .nicole .d-flex .relative .bg-ltgrn {
-    width        : 22vw;
-    height       : 22vw;
+    width: 22vw;
+    height: 22vw;
     border-radius: 50%;
-    position     : absolute;
-    z-index      : -1;
-    bottom       : 3%;
+    position: absolute;
+    z-index: -1;
+    bottom: 3%;
 }
 
 .nicole .d-flex .relative img {
-    width  : 20vw;
-    height : 20vw;
+    width: 20vw;
+    height: 20vw;
     z-index: 1;
 }
 
 .nicole .d-flex .relative {
-    width   : 22vw;
+    width: 22vw;
 }
 
 .nicole {
-    margin  : 10%;
+    margin: 10%;
 }
 
 .kellee {
-    margin  : 10vw;
+    margin: 10vw;
 }
 
 .kellee.d-flex .relative .bg-ltgrn {
-    width        : 20vw;
-    height       : 20vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
-    position     : absolute;
-    z-index      : -1;
-    right        : -4vw;
-    bottom       : -45%;
+    position: absolute;
+    z-index: -1;
+    right: -4vw;
+    bottom: -45%;
 }
 
 .kellee .d-flex .relative {
@@ -471,24 +523,22 @@ element.style {
 }
 
 .kellee.d-flex .relative img {
-    width  : 25vw;
+    width: 25vw;
     z-index: 1;
 }
 
-
-
 .eleanor {
-    margin  : 10%;
+    margin: 10%;
 }
 
 .eleanor.d-flex .relative .bg-ltgrn {
-    width        : 22vw;
-    height       : 22vw;
+    width: 22vw;
+    height: 22vw;
     border-radius: 50%;
-    position     : absolute;
-    z-index      : -1;
-    left         : -3%;
-    bottom       : 10%;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    bottom: 10%;
 }
 
 .eleanor.d-flex .relative {
@@ -496,21 +546,127 @@ element.style {
 }
 
 .eleanor .d-flex .relative img {
-    width  : 23vw;
+    width: 23vw;
     z-index: 1;
 }
 
 
 /* ======================================
-11. Footer
+11. Footer/Accordian
 ========================================*/
-.accordion-button:not(.collapsed), .footer .accordion-button:focus{
-    color:#4B6E43;
+
+
+/*Accordian*/
+
+.accordion-button:not(.collapsed),
+.footer .accordion-button:focus {
+    color: #4B6E43;
     background-color: rgba(151, 196, 95, 0.50);
     border-color: #4B6E43;
     box-shadow: none;
 }
-.accordion-button:not(.collapsed)::after, .accordion-button::after{
-    background-image: url("../img/icons/1Vector.svg") ;
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url("../img/icons/1Vector.svg");
 }
-.footer .d-flex img {}
+
+.accordion-body {
+    background-color: rgba(151, 196, 95, .3);
+}
+
+.accordion-body a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.accordion-body a:hover {
+    color: rgba(151, 196, 95, 0.50)
+}
+
+
+/* Footer */
+
+.footer p {
+    color: #F5F2B1;
+}
+
+.footer .d-flex img {
+    width: 22vw;
+    max-height: 30px;
+    padding-right: 1vw;
+}
+
+.footer .d-flex .p {
+    margin-bottom: 0.5vh !important;
+}
+
+.footer .d-flex .social,
+.footer .d-flex .download {
+    width: 40vw;
+    max-width: 300px;
+}
+
+.footer .d-flex .social ul {
+    width: 100%;
+}
+
+.copy {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw !important;
+}
+
+.bi {
+    color: #F5F2B1;
+    width: 6vw;
+}
+
+
+/* ======================================
+1. Shop Page
+========================================*/
+
+.shop.bnr {
+    background-image: url("../img/hero/carousel-img-8.jpg");
+    font-size: 29px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
+}
+
+.row {
+    margin: auto;
+    margin-top: 10vw;
+}
+
+.card {
+    border: none;
+}
+
+.add-icon {
+    position: relative;
+    top: 5vh;
+}
+
+.card-text {
+    margin-bottom: 0 !important;
+}
+
+.shop-search {
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    margin-top: 1vh;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+
+/* ======================================
+13. Media Queries 
+========================================*/
