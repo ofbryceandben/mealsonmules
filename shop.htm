@@ -24,54 +24,79 @@
 </head>
 
 <body onload="apiLoad();">
-  <!-- Header -->
-  <header class="header">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-      <div class="container-fluid d-flex flex-row-reverse align-items-start relative pt-5 pb-1">
+    <!-- Header -->
+    <header class="header">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="container-fluid d-flex flex-row-reverse align-items-start relative pt-5 pb-1">
 
-        <!-- Cart Button -->
-        <button class="button btn-none"><svg width="28" height="27" viewBox="0 0 28 27" fill="none"
-            xmlns="http://www.w3.org/2000/svg" class="icon">
-            <path
-              d="M8.4 21.6C6.86 21.6 5.614 22.815 5.614 24.3C5.614 25.785 6.86 27 8.4 27C9.94 27 11.2 25.785 11.2 24.3C11.2 22.815 9.94 21.6 8.4 21.6ZM0 0V2.7H2.8L7.84 12.9465L5.95 16.254C5.726 16.632 5.6 17.0775 5.6 17.55C5.6 19.035 6.86 20.25 8.4 20.25H25.2V17.55H8.988C8.792 17.55 8.638 17.4015 8.638 17.2125L8.68 17.0505L9.94 14.85H20.37C21.42 14.85 22.344 14.2965 22.82 13.4595L27.832 4.698C27.944 4.509 28 4.2795 28 4.05C28 3.3075 27.37 2.7 26.6 2.7H5.894L4.578 0H0ZM22.4 21.6C20.86 21.6 19.614 22.815 19.614 24.3C19.614 25.785 20.86 27 22.4 27C23.94 27 25.2 25.785 25.2 24.3C25.2 22.815 23.94 21.6 22.4 21.6Z"
-              fill="#F09C46" />
-          </svg></button>
+                <!-- Cart Button -->
+                <button class="button btn-none"><svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path
+                            d="M8.4 21.6C6.86 21.6 5.614 22.815 5.614 24.3C5.614 25.785 6.86 27 8.4 27C9.94 27 11.2 25.785 11.2 24.3C11.2 22.815 9.94 21.6 8.4 21.6ZM0 0V2.7H2.8L7.84 12.9465L5.95 16.254C5.726 16.632 5.6 17.0775 5.6 17.55C5.6 19.035 6.86 20.25 8.4 20.25H25.2V17.55H8.988C8.792 17.55 8.638 17.4015 8.638 17.2125L8.68 17.0505L9.94 14.85H20.37C21.42 14.85 22.344 14.2965 22.82 13.4595L27.832 4.698C27.944 4.509 28 4.2795 28 4.05C28 3.3075 27.37 2.7 26.6 2.7H5.894L4.578 0H0ZM22.4 21.6C20.86 21.6 19.614 22.815 19.614 24.3C19.614 25.785 20.86 27 22.4 27C23.94 27 25.2 25.785 25.2 24.3C25.2 22.815 23.94 21.6 22.4 21.6Z"
+                            fill="#F09C46" />
+                    </svg></button>
 
-        <a class="navbar-brand absolute m-0 p-0" href="#">
-          <div class="relative">
-            <img class="img" src="img/logo/logo-wordmark 1.svg" alt="">
-          </div>
-        </a>
-        <!-- Nav Mobile Button -->
-        <button class="navbar-toggler btn-none" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg" class="icon">
-            <path
-              d="M0.857143 4.40816H23.1429C23.6163 4.40816 24 3.96961 24 3.42857V0.979592C24 0.438551 23.6163 0 23.1429 0H0.857143C0.383732 0 0 0.438551 0 0.979592V3.42857C0 3.96961 0.383732 4.40816 0.857143 4.40816ZM0.857143 14.2041H23.1429C23.6163 14.2041 24 13.7655 24 13.2245V10.7755C24 10.2345 23.6163 9.79592 23.1429 9.79592H0.857143C0.383732 9.79592 0 10.2345 0 10.7755V13.2245C0 13.7655 0.383732 14.2041 0.857143 14.2041ZM0.857143 24H23.1429C23.6163 24 24 23.5614 24 23.0204V20.5714C24 20.0304 23.6163 19.5918 23.1429 19.5918H0.857143C0.383732 19.5918 0 20.0304 0 20.5714V23.0204C0 23.5614 0.383732 24 0.857143 24Z"
-              fill="#F09C46" />
-          </svg></button>
+                <a class="navbar-brand absolute m-0 p-0" href="#">
+                    <div class="relative">
+                        <img class="img" src="img/logo/logo-wordmark 1.svg" alt="">
+                    </div>
+                </a>
+                <!-- Nav Mobile Button -->
+                <button class="navbar-toggler btn-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path
+                            d="M0.857143 4.40816H23.1429C23.6163 4.40816 24 3.96961 24 3.42857V0.979592C24 0.438551 23.6163 0 23.1429 0H0.857143C0.383732 0 0 0.438551 0 0.979592V3.42857C0 3.96961 0.383732 4.40816 0.857143 4.40816ZM0.857143 14.2041H23.1429C23.6163 14.2041 24 13.7655 24 13.2245V10.7755C24 10.2345 23.6163 9.79592 23.1429 9.79592H0.857143C0.383732 9.79592 0 10.2345 0 10.7755V13.2245C0 13.7655 0.383732 14.2041 0.857143 14.2041ZM0.857143 24H23.1429C23.6163 24 24 23.5614 24 23.0204V20.5714C24 20.0304 23.6163 19.5918 23.1429 19.5918H0.857143C0.383732 19.5918 0 20.0304 0 20.5714V23.0204C0 23.5614 0.383732 24 0.857143 24Z"
+                            fill="#F09C46" />
+                    </svg></button>
 
-        <div class="collapse navbar-collapse bg-white px-3 pb-3" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto pb-2 pb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.htm">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.htm">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.htm">Shop</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-none pe-2" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25"
-                  height="28.37" fill="currentColor" class="icon" viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                <div class="collapse navbar-collapse bg-white px-3 pb-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto pb-2 pb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.htm">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.htm">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.htm">Shop</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-none pe-2" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="28.37" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar End -->
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Hero Section -->
+    <section class="section shop bnr d-flex align-items-center justify-content-center">
+        <h1 class="hero">Fruits & Veggies</h1>
+    </section>
+
+
+    <!-- Mobile Item Search Section -->
+    <section class="section mobileSearch shop-search relative mx-3 mb-3 pb-2 ">
+        <form class="d-flex">
+            <input class="form-control shop-search me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-none pe-2 mb-1" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                    height="28.37" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                 </svg></button>
             </form>
           </form>
