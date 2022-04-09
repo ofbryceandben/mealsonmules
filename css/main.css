@@ -21,8 +21,9 @@ Table of Contents:
 10.5 Kellee
 10.6 Eleanor
 11. Shop Page
+11.1 Shop Banner
+11.2 Shop Products
 12. Footer/Accordian
-12. Shop Page
 13. Media Queries 
 
 
@@ -175,8 +176,8 @@ Table of Contents:
 }
 
 .p {
-    font-size: clamp(11px, 3vw, 16px);
-    text-align: center;
+    font-size: clamp(11px, 3vw, 20px);
+    text-align: left;
 }
 
 .yellow {
@@ -194,6 +195,13 @@ Table of Contents:
 .shop-p {
     font-family: 'Sen', sans-serif;
     font-size: clamp(11px, 3vw, 16px);
+}
+
+@media (min-width: 993px) {
+    .h1 {
+        font-size: 40px;
+        font-family: 'Staatliches', cursive;
+    }
 }
 
 
@@ -279,7 +287,7 @@ Table of Contents:
     .d-flex .about-search {
         background-color: rgba(151, 196, 95, .3);
     }
-    .d-flex .bi {
+    .d-flex .bi-search {
         padding-right: 20px;
         color: #4B6E43;
     }
@@ -439,6 +447,20 @@ element.style {}
 10. About Section
 ========================================*/
 
+.about-width {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.name-right {
+    margin-right: 10px;
+}
+
+
+/* ======================================
+10.1 About Banner 
+========================================*/
+
 .about.bnr {
     background-image: url("../img/hero/carousel-img-3.jpg");
     font-size: 24px;
@@ -454,9 +476,10 @@ element.style {}
     padding-bottom: 2vh;
 }
 
-.name-right {
-    margin-right: 10px;
-}
+
+/* ======================================
+10.2 Bryce
+========================================*/
 
 .bryce {
     margin: 10vw;
@@ -481,6 +504,11 @@ element.style {}
     z-index: 1;
 }
 
+
+/* ======================================
+10.3 Mergan
+========================================*/
+
 .mergan {
     margin: 10%;
 }
@@ -503,6 +531,11 @@ element.style {}
     width: 23vw;
     z-index: 1;
 }
+
+
+/* ======================================
+10.4 Nicole 
+========================================*/
 
 .nicole .d-flex .relative .bg-ltgrn {
     width: 22vw;
@@ -527,6 +560,11 @@ element.style {}
     margin: 10%;
 }
 
+
+/* ======================================
+10.5 Kellee
+========================================*/
+
 .kellee {
     margin: 10vw;
 }
@@ -549,6 +587,11 @@ element.style {}
     width: 25vw;
     z-index: 1;
 }
+
+
+/* ======================================
+10.6 Eleanor
+========================================*/
 
 .eleanor {
     margin: 10%;
@@ -575,7 +618,12 @@ element.style {}
 
 
 /* ======================================
-1. Shop Page
+11. Shop Page
+========================================*/
+
+
+/* ======================================
+11.2 Shop Banner 
 ========================================*/
 
 .shop.bnr {
@@ -587,6 +635,11 @@ element.style {}
     background-position-y: center;
     height: 50vw;
 }
+
+
+/* ======================================
+11.2 Shop Products
+========================================*/
 
 .row {
     margin: auto;
@@ -655,6 +708,10 @@ element.style {}
 
 /* Footer */
 
+.footer {
+    font-family: 'Sen', sans-serif;
+}
+
 .footer p {
     color: #F5F2B1;
 }
@@ -679,11 +736,16 @@ element.style {}
     width: 100%;
 }
 
-.copy {
-    text-align: center;
+.desktop-copy {
+    color: #F5F2B1;
     padding-top: 2vh;
     padding-bottom: 1vw;
     margin-bottom: 0vw !important;
+    text-align: center;
+}
+
+.hide-bottom {
+    display: none;
 }
 
 .bi {
@@ -691,7 +753,45 @@ element.style {}
     width: 6vw;
 }
 
+@media (min-width: 200px) {
+    .desktop-footer {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .accordion {
+        display: none;
+    }
+    .desktop-footer {
+        display: contents;
+    }
+    .accordion-body {
+        background-color: transparent;
+    }
+    .bg-teal {
+        background: #97C45F;
+    }
+    .desktop-copy {
+        background-color: #36676A;
+        color: #F5F2B1;
+        padding: 0px 10px 0px 10px;
+    }
+    .hide-bottom {
+        display: contents;
+    }
+    .p-bottom {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    span {
+        padding-top: 20px;
+    }
+}
+
 
 /* ======================================
 13. Media Queries 
 ========================================*/
+
+@media (min-width: 993px) {}
