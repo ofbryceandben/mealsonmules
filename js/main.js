@@ -11,27 +11,27 @@ Table of Contents:
 ========================================*/
 function apiLoad() {
 
-   async function getProducts() {
-    // create an empty array outside of the arrow function so it can be returned
-    let productsList = [];
-    await fetch('https://momapi.megankrenbrink.com/api/products/read.php?filter=produce')
-      .then(res => res.json())
-      .then(data => {
-        // insert the products data in productList variable
-        productsList = data.products;
-        console.log(data.products);
-      });
-      // return the populated productsList variable
-      return productsList;
-  }
+    async function getProducts() {
+        // create an empty array outside of the arrow function so it can be returned
+        let productsList = [];
+        await fetch('https://momapi.megankrenbrink.com/api/products/read.php?filter=produce')
+            .then(res => res.json())
+            .then(data => {
+                // insert the products data in productList variable
+                productsList = data.products;
+                console.log(data.products);
+            });
+        // return the populated productsList variable
+        return productsList;
+    }
 
-  // function to display products on page
-  async function renderProducts() {
-    let data = await getProducts();
-    let html = '';
-    data.forEach(products => {
-      let htmlSegment = 
-      `<div class="card">
+    // function to display products on page
+    async function renderProducts() {
+        let data = await getProducts();
+        let html = '';
+        data.forEach(products => {
+            let htmlSegment =
+                `<div class="card">
         <img src="${products.image}" class="card-img-top" alt="${products.name}">
         <div class="card-body">
           <p class="card-title">${products.name}</p>
@@ -46,37 +46,37 @@ function apiLoad() {
         </div>
       </div>`
 
-      html += htmlSegment;
-    });
+            html += htmlSegment;
+        });
 
-    let container = document.querySelector('.products');
-    container.innerHTML = html;
-  }
+        let container = document.querySelector('.products');
+        container.innerHTML = html;
+    }
 
-  renderProducts();
+    renderProducts();
 
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-  /* ======================================
-    2. Flickity Slider
-  ========================================*/
-  $('.cat-carousel').flickity({
-    // options
-    contain: true,
-    prevNextButtons: false,
-    wrapAround: true,
-    cellAlign: 'center',
-    pageDots: false
-  });
+    /* ======================================
+      2. Flickity Slider
+    ========================================*/
+    $('.cat-carousel').flickity({
+        // options
+        contain: true,
+        prevNextButtons: false,
+        wrapAround: true,
+        cellAlign: 'center',
+        pageDots: false
+    });
 
-  $('.special-carousel').flickity({
-    // options
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    pageDots: false,
-    autoPlay: true
-  });
+    $('.special-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true,
+        pageDots: false,
+        autoPlay: true
+    });
 });

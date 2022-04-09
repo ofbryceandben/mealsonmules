@@ -6,6 +6,7 @@ Table of Contents:
     1c. Icon Styles
 2. Typography
 3. Header & Nav
+    3.1. Desktop Nav & Header 
 4. Home Banner Section
 5. Mobile Search Section
 6. Mobile App Download Section
@@ -13,7 +14,14 @@ Table of Contents:
 8. Categories Section
 9. Specials Section
 10. About Page 
-11. Footer/Accordian
+10.1 About Banner
+10.2 Bryce 
+10.3 Mergham
+10.4 Nicole 
+10.5 Kellee
+10.6 Eleanor
+11. Shop Page
+12. Footer/Accordian
 12. Shop Page
 13. Media Queries 
 
@@ -229,9 +237,14 @@ Table of Contents:
 }
 
 
-/*======Desktop Nav Bar===========*/
+/*===================================== 
+3.1 Desktop Nav Bar 
+==========================================*/
 
 @media (min-width: 200px) {
+    .img.d {
+        display: none;
+    }
     .nav-item.d {
         display: none;
     }
@@ -240,6 +253,10 @@ Table of Contents:
 @media (min-width: 993px) {
     .img.m {
         display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #36676A;
+        font-size: 18px;
     }
     .nav-item.d {
         display: contents;
@@ -252,15 +269,21 @@ Table of Contents:
     .nav-link.d {
         color: #F5F2B1 !important;
     }
-    .absolute.img.d {
-        top: -5px;
-        left: calc(50vw - 67.5px);
-        z-index: 1000;
+    .img.d {
+        display: block;
+        width: 150px;
+    }
+    .button {
+        margin-top: 3.8vh;
+    }
+    .d-flex .about-search {
+        background-color: rgba(151, 196, 95, .3);
+    }
+    .d-flex .bi {
+        padding-right: 20px;
+        color: #4B6E43;
     }
 }
-
-
-/*====== Desktop Nav Bread Crumb ========*/
 
 
 /* ======================================
@@ -552,7 +575,52 @@ element.style {}
 
 
 /* ======================================
-11. Footer/Accordian
+1. Shop Page
+========================================*/
+
+.shop.bnr {
+    background-image: url("../img/hero/carousel-img-8.jpg");
+    font-size: 29px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
+}
+
+.row {
+    margin: auto;
+    margin-top: 10vw;
+}
+
+.card {
+    border: none;
+    height: 90vh;
+    padding: 10px
+}
+
+.add-icon {
+    position: relative;
+    top: 0vh;
+}
+
+.card-text {
+    margin-bottom: 0 !important;
+}
+
+.shop-search {
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    margin-top: 1vh;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+
+/* ======================================
+12. Footer/Accordian
 ========================================*/
 
 
@@ -621,49 +689,6 @@ element.style {}
 .bi {
     color: #F5F2B1;
     width: 6vw;
-}
-
-
-/* ======================================
-1. Shop Page
-========================================*/
-
-.shop.bnr {
-    background-image: url("../img/hero/carousel-img-8.jpg");
-    font-size: 29px;
-    color: #F5F2B1;
-    font-family: 'Staatliches', cursive;
-    background-size: 100%;
-    background-position-y: center;
-    height: 50vw;
-}
-
-.row {
-    margin: auto;
-    margin-top: 10vw;
-}
-
-.card {
-    border: none;
-}
-
-.add-icon {
-    position: relative;
-    top: 5vh;
-}
-
-.card-text {
-    margin-bottom: 0 !important;
-}
-
-.shop-search {
-    color: #4B6E43;
-    font-size: 14px;
-    font-family: 'Sen', sans-serif;
-    font-weight: 700;
-    margin-top: 1vh;
-    border: none;
-    background-color: #F4F4F4;
 }
 
 
