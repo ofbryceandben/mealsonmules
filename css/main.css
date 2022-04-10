@@ -881,7 +881,7 @@ margin-top: 4rem;
 
     .filter fieldset {
         position: absolute;
-        top: 10%;
+        top: 150px;
         z-index: -1;
         background-color: #82c2a8;
         width: 18vw;
@@ -931,24 +931,25 @@ margin-top: 4rem;
         color:#fff;
         background-color: #97C45F;
         border-radius: 50px;
-        width: 33vw;
+        width: 300px;
+        height: 50px;
         box-shadow: 2px 3px rgba(128,128,128,0.4);
     }
 
     .bi-heart-fill {
         position: relative;
-        top: 1.5vh;
-        left: 1vw;
+        top: 2vh;
+        left: 10px;
         border: 2px solid #97c45f; 
-        margin: 1vw;
+        margin: 5px;
         box-shadow: 2px 3px rgba(128,128,128,0.4);
     }
 
     .bi-heart {
         display: block;
-        width: 6vw;
-        height: 5vh;
-        padding: 7px;
+        width: 60px;
+        height: 40px;
+        padding: 10px;
     }
 
     .fa-star {
