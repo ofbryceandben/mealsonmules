@@ -860,11 +860,8 @@ margin-top: 4rem;
     }
 }
 
-@media (min-width: 768px) {
 
-}
-
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .shop.bnr {
         background-image: none;
         height: 20vh;
