@@ -72,11 +72,10 @@ $(document).ready(function() {
     });
 
     $('.special-carousel').flickity({
-        // options
         cellAlign: 'center',
         contain: true,
         wrapAround: true,
         pageDots: false,
-        autoPlay: true
+        autoPlay: true,
     });
 });
