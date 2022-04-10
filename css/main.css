@@ -1060,6 +1060,7 @@ margin-top: 4rem;
         text-align: center;
         padding-right: 3vw;
     }
+  }
 
     @media (min-width: 993px) {
         .accordion {
