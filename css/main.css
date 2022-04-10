@@ -1,4 +1,4 @@
-                 /* ======================================
+/* ======================================
 Table of Contents:
 1. Global Styles
     1a. Button Styles
@@ -28,7 +28,7 @@ Table of Contents:
 
 
 ========================================*/
-             /* ? ===================================
+/* ? ===================================
 ? >>> VARIABLES <<<
     Font Families:
 
@@ -48,873 +48,1088 @@ Table of Contents:
 
 
 ?======================================= */
-             /* ======================================
+/* ======================================
 1. Global Styles
 ========================================*/
-             
-             .body {
-                 font-family: 'Sen', sans-serif;
-                 font-weight: 400;
-             }
-             
-             .relative {
-                 position: relative;
-             }
-             
-             .absolute {
-                 position: absolute;
-             }
-             /* ======================================
+
+.body {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* ======================================
 1a. Button Styles
 ========================================*/
-             
-             .btn {}
-             
-             .btn-img {
-                 width: auto;
-                 height: 10vw;
-                 max-height: 76px;
-                 padding: 0;
-                 margin: 0;
-             }
-             
-             .btn-none {
-                 border: none;
-                 padding: 0;
-                 background-color: transparent;
-             }
-             
-             .btn-primary {
-                 background-color: teal;
-                 border-color: teal;
-             }
-             /* ======================================
+
+.btn {}
+
+.btn-img {
+    width: auto;
+    height: 10vw;
+    max-height: 76px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-none {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: teal;
+    border-color: teal;
+}
+
+/* ======================================
 1b. Background Color Styles
 ========================================*/
-             
-             .bg-white {
-                 background-color: #fff;
-             }
-             
-             .bg-ltgrn30 {
-                 background-color: rgba(132, 194, 169, 0.30);
-             }
-             
-             .bg-ltgrn {
-                 background-color: #97C45F;
-             }
-             
-             .bg-teal {
-                 background-color: #36676A;
-             }
-             
-             .bg-ltylw {
-                 background-color: hsla(57, 77%, 83%, 0.5)
-             }
-             
-             .bg-orange30 {
-                 background-color: rgba(240, 155, 70, 0.30);
-             }
-             /* ======================================
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-ltgrn30 {
+    background-color: rgba(132, 194, 169, 0.30);
+}
+
+.bg-ltgrn {
+    background-color: #97C45F;
+}
+
+.bg-teal {
+    background-color: #36676A;
+}
+
+.bg-ltylw {
+    background-color: hsla(57, 77%, 83%, 0.5)
+}
+
+.bg-orange30 {
+    background-color: rgba(240, 155, 70, 0.30);
+}
+
+/* ======================================
 1c. Icon Styles
 ========================================*/
-             
-             .icon {
-                 fill: #f09C46
-             }
-             /* ======================================
+
+.icon {
+    fill: #f09C46
+}
+
+/* ======================================
 2. Typography
 ========================================*/
-             
-             .h1,
-             .h2,
-             .h3,
-             .h4,
-             .h5 {
-                 margin: 0;
-             }
-             
-             .h1 {
-                 font-size: 24px;
-                 font-family: 'Staatliches', cursive;
-             }
-             
-             .h2,
-             .h3 {
-                 font-family: 'Staatliches', cursive;
-                 text-align: center;
-             }
-             
-             .h2 {
-                 font-size: clamp(24px, 5vw, 38px);
-             }
-             
-             .h3 {
-                 font-size: clamp(22px, 5vw, 56px);
-             }
-             
-             .h4 {
-                 font-size: clamp(14px, 3vw, 32px);
-                 font-weight: 700;
-             }
-             
-             .h5 {
-                 font-size: clamp(16px, 3vw, 36px);
-                 font-family: 'Staatliches', cursive;
-             }
-             
-             h6 {
-                 font-size: 16px;
-                 font-weight: 700;
-             }
-             
-             .p {
-                 font-size: clamp(11px, 3vw, 20px);
-                 text-align: left;
-             }
-             
-             .yellow {
-                 color: #F5F2B1;
-             }
-             
-             .orange {
-                 color: #F09C46;
-             }
-             
-             .green {
-                 color: #4B6E43;
-             }
-             
-             .shop-p {
-                 font-family: 'Sen', sans-serif;
-                 font-size: clamp(11px, 3vw, 16px);
-             }
-             
-             @media (min-width: 993px) {
-                 .h1 {
-                     font-size: 40px;
-                     font-family: 'Staatliches', cursive;
-                 }
-             }
-             /* ======================================
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    margin: 0;
+}
+
+.h1 {
+    font-size: 24px;
+    font-family: 'Staatliches', cursive;
+}
+
+.h2,
+.h3 {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.h2 {
+    font-size: clamp(24px, 5vw, 38px);
+}
+
+.h3 {
+    font-size: clamp(22px, 5vw, 56px);
+}
+
+.h4 {
+    font-size: clamp(14px, 3vw, 32px);
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: clamp(16px, 3vw, 36px);
+    font-family: 'Staatliches', cursive;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.p {
+    font-size: clamp(11px, 3vw, 20px);
+    text-align: left;
+}
+
+.yellow {
+    color: #F5F2B1;
+}
+
+.orange {
+    color: #F09C46;
+}
+
+.green {
+    color: #4B6E43;
+}
+
+.shop-p {
+    font-family: 'Sen', sans-serif;
+    font-size: clamp(11px, 3vw, 16px);
+}
+
+@media (min-width: 993px) {
+    .h1 {
+        font-size: 40px;
+        font-family: 'Staatliches', cursive;
+    }
+}
+
+/* ======================================
 3. Header & Nav
 ========================================*/
-             
-             .header .navbar {
-                 height: 100px;
-                 font-family: 'Sen', sans-serif;
-             }
-             
-             .header .navbar {
-                 height: 100px;
-             }
-             
-             .header .navbar .container-fluid .navbar-brand.absolute {
-                 top: -5px;
-                 left: calc(50vw - 67.5px);
-                 z-index: 1000;
-             }
-             
-             .header .navbar .container-fluid .navbar-brand .relative {
-                 background-color: #fff;
-                 border-radius: 50%;
-             }
-             
-             .header .navbar .container-fluid .collapse {
-                 z-index: 999;
-             }
-             
-             .header .navbar .container-fluid .collapse .form-control {
-                 border: none;
-             }
-             
-             .header .navbar .container-fluid .collapse .form-control::placeholder {
-                 color: #4B6E43;
-                 font-size: 14px;
-                 font-family: 'Sen', sans-serif;
-                 font-weight: 700;
-             }
-             /*===================================== 
+
+.header .navbar {
+    height: 100px;
+    font-family: 'Sen', sans-serif;
+}
+
+.header .navbar {
+    height: 100px;
+}
+
+.header .navbar .container-fluid .navbar-brand.absolute {
+    top: -5px;
+    left: calc(50vw - 67.5px);
+    z-index: 1000;
+}
+
+.header .navbar .container-fluid .navbar-brand .relative {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.header .navbar .container-fluid .collapse {
+    z-index: 999;
+}
+
+.header .navbar .container-fluid .collapse .form-control {
+    border: none;
+}
+
+.header .navbar .container-fluid .collapse .form-control::placeholder {
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+
+/*===================================== 
 3.1 Desktop Nav Bar 
 ==========================================*/
-             
-             @media (min-width: 200px) {
-                 .img.d {
-                     display: none;
-                 }
-                 .nav-item.d {
-                     display: none;
-                 }
-             }
-             
-             @media (min-width: 993px) {
-                 .img.m {
-                     display: none;
-                 }
-                 .navbar-light .navbar-nav .nav-link {
-                     color: #36676A;
-                     font-size: 18px;
-                 }
-                 .nav-item.d {
-                     display: contents;
-                     text-decoration: none;
-                 }
-                 .nav {
-                     font-family: 'Sen', sans-serif;
-                     background-color: #36676A;
-                 }
-                 .nav-link.d {
-                     color: #F5F2B1 !important;
-                 }
-                 .img.d {
-                     display: block;
-                     width: 150px;
-                 }
-                 .button {
-                     margin-top: 3.8vh;
-                 }
-                 .d-flex .about-search {
-                     background-color: rgba(151, 196, 95, .3);
-                 }
-                 .d-flex .bi-search {
-                     padding-right: 20px;
-                     color: #4B6E43;
-                 }
-             }
-             /* ======================================
+
+@media (min-width: 200px) {
+    .img.d {
+        display: none;
+    }
+
+    .nav-item.d {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .img.m {
+        display: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #36676A;
+        font-size: 18px;
+    }
+
+    .nav-item.d {
+        display: contents;
+        text-decoration: none;
+    }
+
+    .nav {
+        font-family: 'Sen', sans-serif;
+        background-color: #36676A;
+    }
+
+    .nav-link.d {
+        color: #F5F2B1 !important;
+        
+    }
+
+    .img.d {
+        display: block;
+        width: 150px;
+    }
+
+    .button {
+        margin-top: 3.8vh;
+    }
+
+    .d-flex .about-search {
+        background-color: rgba(151, 196, 95, .3);
+    }
+
+    .d-flex .bi-search {
+        padding-right: 20px;
+        color: #4B6E43;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav{
+        height: 50px;
+        font-size: 24px;
+        align-content: center ;
+
+}
+
+.nav .mt-4 {
+margin-top: 4rem;
+
+}
+.img.d {
+    display: block;
+    width: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 28px;
+}
+}
+
+/* ======================================
 4. Home Banner Section
 ========================================*/
-             
-             .home.bnr {
-                 background-image: url('../img/hero/home-bnr-bg.jpg');
-                 background-size: 100%;
-                 background-position-y: center;
-                 height: 50vw;
-             }
-             /* ======================================
+
+.home.bnr {
+    background-image: url('../img/hero/home-bnr-bg.jpg');
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
+}
+
+/* ======================================
 5. Mobile Search Section
 ========================================*/
-             
-             .mobileSearch .form-control {
-                 border: none;
-             }
-             
-             .mobileSearch .form-control::placeholder {
-                 color: #4B6E43;
-                 font-size: 14px;
-                 font-family: 'Sen', sans-serif;
-                 font-weight: 700;
-             }
-             /* ======================================
+
+.mobileSearch .form-control {
+    border: none;
+}
+
+.mobileSearch .form-control::placeholder {
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+
+/* ======================================
 6. Mobile App Download Section
 ========================================*/
-             
-             @media (min-width: 200px) {
-                 .mob-app-d-hide {
-                     display: none;
-                 }
-             }
-             
-             @media (min-width: 993px) {
-                 .desk-center {
-                     padding-left: 10%;
-                     margin: 2.5rem;
-                 }
-                 .mob-app-d-hide {
-                     display: block;
-                     height: 50vh;
-                 }
-                 .btn-img {
-                     height: 6vh;
-                 }
-                 .appDwnld .p {
-                     font-size: 20px;
-                 }
-                 .af {
-                     text-align: left;
-                 }
-                 .left-app-desk.px-4 {
-                     padding-left: 0!important;
-                     justify-content: left !important;
-                 }
-             }
-             
-             @media (min-width: 1200px) {
-                 .appDwnld .p {
-                     font-size: 26px;
-                 }
-             }
-             /* ======================================
+
+@media (min-width: 200px) {
+    .mob-app-d-hide {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .desk-center {
+        padding-left: 10%;
+        margin: 2.5rem;
+    }
+
+    .mob-app-d-hide {
+        display: block;
+        height: 40vh;
+    }
+
+    .btn-img {
+        height: 6vh;
+    }
+
+    .appDwnld .p {
+        font-size: 20px;
+    }
+
+    .af {
+        text-align: left;
+    }
+
+    .left-app-desk.px-4 {
+        padding-left: 0 !important;
+        justify-content: left !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .appDwnld .p {
+        font-size: 26px;
+    }
+}
+
+/* ======================================
 7. How It Works Section
 ========================================*/
-             
-             .explain .relative img {
-                 width: auto;
-             }
-             
-             .explain .d-flex img,
-             .explain .d-flex .h4 {
-                 z-index: 1;
-             }
-             
-             .explain .d-flex .h4 {
-                 margin-top: 10vw;
-             }
-             
-             .explain .d-flex .bg-ltgrn {
-                 width: 30vw;
-                 height: 30vw;
-                 border-radius: 50%;
-                 top: 0
-             }
-             
-             .explain .d-flex .arrow {
-                 height: 130px;
-                 width: auto;
-             }
-             
-             .explain .browse .arrow {
-                 right: 15vw;
-                 top: 25vw;
-             }
-             
-             .explain .browse img {
-                 height: 20vw;
-             }
-             
-             .explain .add .arrow {
-                 left: 15vw;
-                 top: 50vw;
-             }
-             
-             .explain .add .bg-ltgrn {
-                 top: 10vw;
-             }
-             
-             .explain .add img {
-                 height: 40vw;
-             }
-             
-             .explain .deliver .bg-ltgrn {
-                 top: 15vw;
-                 left: calc(50vw - 15vw);
-             }
-             
-             .explain .deliver img {
-                 height: 40vw;
-             }
-             
-             @media (min-width:993px) {
-                 .explain .browse {
-                     left: -23vw;
-                     top: 5vw;
-                 }
-                 .explain .browse .arrow {
-                     right: 15vw;
-                     top: 10vw;
-                     transform: rotate(-60deg)
-                 }
-                 .explain .d-flex .arrow {
-                     height: 200px;
-                 }
-                 .explain .add {
-                     right: 1vw;
-                     top: -15vh;
-                 }
-                 .explain .add .arrow {
-                     left: 8vw;
-                     top: 5vw;
-                     transform: rotate(60deg);
-                 }
-                 .explain .deliver {
-                     top: -20vh;
-                     left: -20vw;
-                 }
-                 .add img {
-                     padding-left: 50vw;
-                 }
-                 .explain .add .bg-ltgrn {
-                     right: 10vw;
-                 }
-                 .text-padding {
-                     position: relative;
-                     left: 25vw;
-                 }
-                 .explain .d-flex .h4 {
-                     margin-top: 6vw;
-                 }
-             }
-             /* ======================================
+
+.explain .relative img {
+    width: auto;
+}
+
+.explain .d-flex img,
+.explain .d-flex .h4 {
+    z-index: 1;
+}
+
+.explain .d-flex .h4 {
+    margin-top: 10vw;
+}
+
+.explain .d-flex .bg-ltgrn {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    top: 0
+}
+
+.explain .d-flex .arrow {
+    height: 130px;
+    width: auto;
+}
+
+.explain .browse .arrow {
+    right: 15vw;
+    top: 25vw;
+}
+
+.explain .browse img {
+    height: 20vw;
+}
+
+.explain .add .arrow {
+    left: 15vw;
+    top: 50vw;
+}
+
+.explain .add .bg-ltgrn {
+    top: 10vw;
+}
+
+.explain .add img {
+    height: 40vw;
+}
+
+.explain .deliver .bg-ltgrn {
+    top: 15vw;
+    left: calc(50vw - 15vw);
+}
+
+.explain .deliver img {
+    height: 40vw;
+}
+
+@media (min-width:993px) {
+    .explain .browse {
+        left: -23vw;
+        top: 5vw;
+    }
+
+    .explain .browse .arrow {
+        right: 15vw;
+        top: 10vw;
+        transform: rotate(-60deg)
+    }
+
+    .explain .d-flex .arrow {
+        height: 200px;
+    }
+
+    .explain .add {
+        right: 1vw;
+        top: -15vh;
+    }
+
+    .explain .add .arrow {
+        left: 8vw;
+        top: 5vw;
+        transform: rotate(60deg);
+    }
+
+    .explain .deliver {
+        top: -20vh;
+        left: -20vw;
+    }
+
+    .add img {
+        padding-left: 50vw;
+    }
+
+    .explain .add .bg-ltgrn {
+        right: 10vw;
+    }
+
+    .text-padding {
+        position: relative;
+        left: 25vw;
+    }
+
+    .explain .d-flex .h4 {
+        margin-top: 6vw;
+    }
+}
+
+/* ======================================
 8. Categories Section
 ========================================*/
-             
-             .categories .cat-carousel .category {
-                 width: 50vw;
-                 min-width: 178px;
-                 height: 25vw;
-                 min-height: 93px;
-                 background-color: black;
-                 margin: 0 8px;
-             }
-             
-             .categories .cat-carousel .flickity-viewport {
-                 height: 25vw !important;
-                 min-height: 100px;
-             }
-             
-             .cat1 {
-                 background-image: url("../img/catagories/fruits.jpg");
-                 background-size: 100%;
-             }
-             
-             .cat2 {
-                 background-image: url("../img/catagories/meats.jpg");
-                 background-size: 100%;
-             }
-             
-             .cat3 {
-                 background-image: url("../img/catagories/bakery.jpg");
-                 background-size: 100%;
-             }
-             
-             .cat4 {
-                 background-image: url("../img/catagories/seafood.jpg");
-                 background-size: 100%;
-             }
-             
-             .cat5 {
-                 background-image: url("../img/catagories/snacks.jpg");
-                 background-size: 100%;
-             }
-             
-             .cat6 {
-                 background-image: url("../img/catagories/eggs.jpg");
-                 background-size: 100%;
-             }
-             /* ======================================
+
+.categories .cat-carousel .category {
+    width: 50vw;
+    min-width: 178px;
+    height: 25vw;
+    min-height: 93px;
+    background-color: black;
+    margin: 0 8px;
+}
+
+.categories .cat-carousel .flickity-viewport {
+    height: 25vw !important;
+    min-height: 100px;
+}
+
+.cat1 {
+    background-image: url("../img/catagories/fruits.jpg");
+    background-size: 100%;
+}
+
+.cat2 {
+    background-image: url("../img/catagories/meats.jpg");
+    background-size: 100%;
+}
+
+.cat3 {
+    background-image: url("../img/catagories/bakery.jpg");
+    background-size: 100%;
+}
+
+.cat4 {
+    background-image: url("../img/catagories/seafood.jpg");
+    background-size: 100%;
+}
+
+.cat5 {
+    background-image: url("../img/catagories/snacks.jpg");
+    background-size: 100%;
+}
+
+.cat6 {
+    background-image: url("../img/catagories/eggs.jpg");
+    background-size: 100%;
+}
+
+/* ======================================
 9. Specials Section
 ========================================*/
-             
-             .sectiom.specials {
-                 height: 200vh;
-             }
-             
-             .specials .special-carousel .flickity-button {
-                 background: transparent;
-             }
-             
-             .specials .special-carousel .flickity-slider {
-                 /* margin-left: 5vw; */
-                 border: 1px solid rgba(0, 0, 0, 0, 0.9);
-             }
-             
-             .specials .special-carousel .flickity-prev-next-button.previous {
-                 left: 0px;
-             }
-             
-             .specials .special-carousel .flickity-prev-next-button.next {
-                 right: 0px;
-             }
-             
-             .specials .special-carousel .flickity-button-icon .arrow {
-                 fill: #f09C46;
-                 width: 25px;
-                 height: 41px;
-             }
-             
-             .specials .special-carousel .items {
-                 width: 300px;
-                 height: 400px;
-                 margin-left: 70px;
-             }
-             
-             .specials-center {
-                 position: relative;
-                 left: -23px;
-                 text-align: center;
-                 font-family: 'Sen', sans-serif;
-                 font-size: 16px;
-             }
-             /* ======================================
+
+.sectiom.specials {
+    height: 200vh;
+}
+
+.specials .special-carousel .flickity-button {
+    background: transparent;
+}
+
+.specials .special-carousel .flickity-slider {
+    /* margin-left: 5vw; */
+
+}
+
+.specials .special-carousel .flickity-prev-next-button.previous {
+    left: 0px;
+}
+
+.specials .special-carousel .flickity-prev-next-button.next {
+    right: 0px;
+}
+
+.specials .special-carousel .flickity-button-icon .arrow {
+    fill: #f09C46;
+    width: 25px;
+    height: 41px;
+}
+
+.specials .special-carousel .items img {
+    height: 150px;
+}
+
+.specials .special-carousel .items {
+    width: 250px;
+    height: 275px;
+    margin-left: 70px;
+}
+
+.specials-center {
+    position: relative;
+    left: -50px;
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    font-size: 16px;
+}
+
+@media (min-width: 993px) {
+    .specials .special-carousel .items {
+        width: 300px;
+        height: 375px;
+        margin-left: 70px;
+    }
+
+    .specials-center {
+        position: relative;
+        left: -23px;
+        text-align: center;
+        font-family: 'Sen', sans-serif;
+        font-size: 16px;
+    }
+    .specials .special-carousel .items img {
+        height: 250px;
+    }
+}
+
+/* ======================================
 10. About Section
 ========================================*/
-             
-             .about-width {
-                 width: 80vw;
-                 margin: 0 auto;
-             }
-             
-             .name-right {
-                 margin-right: 10px;
-             }
-             /* ======================================
+
+.about-width {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.name-right {
+    margin-right: 10px;
+}
+
+/* ======================================
 10.1 About Banner 
 ========================================*/
-             
-             .about.bnr {
-                 background-image: url("../img/hero/carousel-img-3.jpg");
-                 font-size: 24px;
-                 color: #F5F2B1;
-                 font-family: 'Staatliches', cursive;
-                 background-size: 100%;
-                 background-position-y: center;
-                 height: 50vw;
-             }
-             
-             .h2.orange {
-                 line-height: 0px !important;
-                 padding-bottom: 2vh;
-             }
-             /* ======================================
+
+.about.bnr {
+    background-image: url("../img/hero/carousel-img-3.jpg");
+    font-size: 24px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
+}
+
+.h2.orange {
+    line-height: 0px !important;
+    padding-bottom: 2vh;
+}
+
+/* ======================================
 10.2 Bryce
 ========================================*/
-             
-             .bryce {
-                 margin: 10vw;
-             }
-             
-             .bryce .d-flex .relative .bg-ltgrn {
-                 width: 20vw;
-                 height: 20vw;
-                 border-radius: 50%;
-                 position: absolute;
-                 z-index: -1;
-                 left: 10%;
-                 bottom: 1%;
-             }
-             
-             .bryce .d-flex .relative {
-                 width: 28vw;
-             }
-             
-             .bryce .d-flex .relative img {
-                 width: 25vw;
-                 z-index: 1;
-             }
-             /* ======================================
+
+.bryce {
+    margin: 10vw;
+}
+
+.bryce .d-flex .relative .bg-ltgrn {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    bottom: 1%;
+}
+
+.bryce .d-flex .relative {
+    width: 28vw;
+}
+
+.bryce .d-flex .relative img {
+    width: 25vw;
+    z-index: 1;
+}
+
+/* ======================================
 10.3 Mergan
 ========================================*/
-             
-             .mergan {
-                 margin: 10%;
-             }
-             
-             .mergan.d-flex .relative .bg-ltgrn {
-                 width: 22vw;
-                 height: 22vw;
-                 border-radius: 50%;
-                 position: absolute;
-                 z-index: -1;
-                 left: 2%;
-                 bottom: 10%;
-             }
-             
-             .mergan.d-flex .relative {
-                 width: 28vw;
-             }
-             
-             .mergan.d-flex .relative img {
-                 width: 23vw;
-                 z-index: 1;
-             }
-             /* ======================================
+
+.mergan {
+    margin: 10%;
+}
+
+.mergan.d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 2%;
+    bottom: 10%;
+}
+
+.mergan.d-flex .relative {
+    width: 28vw;
+}
+
+.mergan.d-flex .relative img {
+    width: 23vw;
+    z-index: 1;
+}
+
+/* ======================================
 10.4 Nicole 
 ========================================*/
-             
-             .nicole .d-flex .relative .bg-ltgrn {
-                 width: 22vw;
-                 height: 22vw;
-                 border-radius: 50%;
-                 position: absolute;
-                 z-index: -1;
-                 bottom: 3%;
-             }
-             
-             .nicole .d-flex .relative img {
-                 width: 20vw;
-                 height: 20vw;
-                 z-index: 1;
-             }
-             
-             .nicole .d-flex .relative {
-                 width: 22vw;
-             }
-             
-             .nicole {
-                 margin: 10%;
-             }
-             /* ======================================
+
+.nicole .d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    bottom: 3%;
+}
+
+.nicole .d-flex .relative img {
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+}
+
+.nicole .d-flex .relative {
+    width: 22vw;
+}
+
+.nicole {
+    margin: 10%;
+}
+
+/* ======================================
 10.5 Kellee
 ========================================*/
-             
-             .kellee {
-                 margin: 10vw;
-             }
-             
-             .kellee.d-flex .relative .bg-ltgrn {
-                 width: 20vw;
-                 height: 20vw;
-                 border-radius: 50%;
-                 position: absolute;
-                 z-index: -1;
-                 right: -4vw;
-                 bottom: -45%;
-             }
-             
-             .kellee .d-flex .relative {
-                 width: 28vw;
-             }
-             
-             .kellee.d-flex .relative img {
-                 width: 25vw;
-                 z-index: 1;
-             }
-             /* ======================================
+
+.kellee {
+    margin: 10vw;
+}
+
+.kellee.d-flex .relative .bg-ltgrn {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    right: -4vw;
+    bottom: -45%;
+}
+
+.kellee .d-flex .relative {
+    width: 28vw;
+}
+
+.kellee.d-flex .relative img {
+    width: 25vw;
+    z-index: 1;
+}
+
+/* ======================================
 10.6 Eleanor
 ========================================*/
-             
-             .eleanor {
-                 margin: 10%;
-             }
-             
-             .eleanor.d-flex .relative .bg-ltgrn {
-                 width: 22vw;
-                 height: 22vw;
-                 border-radius: 50%;
-                 position: absolute;
-                 z-index: -1;
-                 left: -3%;
-                 bottom: 10%;
-             }
-             
-             .eleanor.d-flex .relative {
-                 width: 22vw;
-             }
-             
-             .eleanor .d-flex .relative img {
-                 width: 23vw;
-                 z-index: 1;
-             }
-             /* ======================================
+
+.eleanor {
+    margin: 10%;
+}
+
+.eleanor.d-flex .relative .bg-ltgrn {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    bottom: 10%;
+}
+
+.eleanor.d-flex .relative {
+    width: 22vw;
+}
+
+.eleanor .d-flex .relative img {
+    width: 23vw;
+    z-index: 1;
+}
+
+/* ======================================
 11. Shop Page
 ========================================*/
-             /* ======================================
+/* ======================================
 11.2 Shop Banner 
 ========================================*/
-             
-             .shop.bnr {
-                 background-image: url("../img/hero/carousel-img-8.jpg");
-                 font-size: 29px;
-                 color: #F5F2B1;
-                 font-family: 'Staatliches', cursive;
-                 background-size: 100%;
-                 background-position-y: center;
-                 height: 50vw;
-             }
-             /* ======================================
+
+.shop.bnr {
+    background-image: url("../img/hero/carousel-img-8.jpg");
+    font-size: 29px;
+    color: #F5F2B1;
+    font-family: 'Staatliches', cursive;
+    background-size: 100%;
+    background-position-y: center;
+    height: 50vw;
+}
+
+/* ======================================
 11.2 Shop Products
 ========================================*/
-             
-             .shop-search {
-                 background-color: #333333;
-             }
-             
-             .row {
-                 margin: auto;
-                 margin-top: 10vw;
-             }
-             
-             .card {
-                 border: none;
-                 width: 50%;
-                 height: 40%;
-                 padding: 10px;
-             }
-             
-             .add-icon {
-                 position: relative;
-                 top: 0vh;
-                 left: 2vw;
-             }
-             
-             .card-text {
-                 margin-bottom: 0 !important;
-             }
-             
-             .shop-search {
-                 color: #4B6E43;
-                 font-size: 14px;
-                 font-family: 'Sen', sans-serif;
-                 font-weight: 700;
-                 margin-top: 1vh;
-                 border: none;
-                 background-color: #F4F4F4;
-             }
-             
-             @media (min-width: 200px) {
-                 .filter.absolute {
-                     display: none;
-                 }
-             }
-             
-             @media (min-width: 993px) {
-                 .shop.bnr {
-                     background-image: none;
-                     height: 20vh;
-                     color: #36676A;
-                 }
-                 .shop-search {
-                     display: none;
-                 }
-                 .filter.absolute {
-                     display: contents;
-                 }
-                 .filter fieldset {
-                     position: absolute;
-                     top: 24vh;
-                     z-index: 1;
-                     background-color: #82c2a8;
-                     width: 15vw;
-                     height: 100vh;
-                 }
-             }
-             /* ======================================
+
+.shop-search {
+    background-color: #333333;
+}
+
+.row {
+    margin: auto;
+    margin-top: 10vw;
+}
+
+.card {
+    border: none;
+    width: 50%;
+    height: 40%;
+    padding: 10px;
+}
+
+.add-icon {
+    position: relative;
+    top: 0vh;
+    left: 2vw;
+    width: 20vw;
+}
+
+.card-text {
+    margin-bottom: 0 !important;
+}
+
+.shop-search {
+    color: #4B6E43;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    margin-top: 1vh;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+@media (min-width: 200px) {
+    .filter.absolute {
+        display: none;
+    }
+
+    .btn-atc {
+        display: none;
+    }
+
+    .fa-star {
+        display: none;
+    }
+
+    .bi-heart {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 993px) {
+    .shop.bnr {
+        background-image: none;
+        height: 20vh;
+        color: #36676A;
+    }
+
+    .shop-search {
+        display: none;
+    }
+
+    .filter.absolute {
+        display: contents;
+    }
+
+    .filter fieldset {
+        position: absolute;
+        top: 8%;
+        z-index: -1;
+        background-color: #82c2a8;
+        width: 18vw;
+        height: 100%;
+        font-family: 'Sen' sans-serif;
+    }
+
+    .filter-list {
+        position: relative;
+        top: 6vh;
+        left:2vw;
+        font-size: 18px;
+
+    }
+
+    .btn-hide {
+        display: none;
+    }
+
+    .card {
+        z-index: -2;
+        width: 310px;
+        height: 450px;
+        margin: 3vw;
+        box-shadow: 8px 8px 15px rgba(128,128,128,0.4);
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .card-body {
+        font-family: 'Sen', sans-serif;
+    }
+
+    .products {
+        margin-left: 22vw;
+
+    }
+
+    .add-icon {
+        display: none;
+    }
+
+    .btn-atc {
+        display: block;
+        color:#fff;
+        background-color: #97C45F;
+        border-radius: 50px;
+        width: 33vw;
+        box-shadow: 2px 3px rgba(128,128,128,0.4);
+    }
+
+    .bi-heart-fill {
+        position: relative;
+        top: 1.5vh;
+        left: 1vw;
+        border: 2px solid #97c45f; 
+        margin: 1vw;
+        box-shadow: 2px 3px rgba(128,128,128,0.4);
+    }
+
+    .bi-heart {
+        display: block;
+        width: 6vw;
+        height: 5vh;
+        padding: 7px;
+    }
+
+    .fa-star {
+        display:block;
+        color:#C4C4C4 ;
+    }
+    .checked {
+    color: orange;
+
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+    .filter-list {
+        font-size: 26px;
+
+    }
+
+    .hero {position: relative;
+        left: 6vw;
+        font-size: 60px;
+    }
+}
+
+/* ======================================
 12. Footer/Accordian
 ========================================*/
-             /*Accordian*/
-             
-             .accordion-button:not(.collapsed),
-             .footer .accordion-button:focus {
-                 color: #4B6E43;
-                 background-color: rgba(151, 196, 95, 0.50);
-                 border-color: #4B6E43;
-                 box-shadow: none;
-             }
-             
-             .accordion-button:not(.collapsed)::after,
-             .accordion-button::after {
-                 background-image: url("../img/icons/1Vector.svg");
-             }
-             
-             .accordion-body {
-                 background-color: rgba(151, 196, 95, .3);
-             }
-             
-             .accordion-body a {
-                 color: #333333;
-                 text-decoration: none;
-             }
-             
-             .accordion-body a:hover {
-                 color: rgba(151, 196, 95, 0.50)
-             }
-             /* Footer */
-             
-             .footer {
-                 font-family: 'Sen', sans-serif;
-             }
-             
-             .footer p {
-                 color: #F5F2B1;
-             }
-             
-             .footer .d-flex img {
-                 width: 22vw;
-                 max-height: 30px;
-                 padding-right: 1vw;
-             }
-             
-             .footer .d-flex .p {
-                 margin-bottom: 0.5vh !important;
-             }
-             
-             .footer .d-flex .social,
-             .footer .d-flex .download {
-                 width: 52vw;
-                 max-width: 300px;
-             }
-             
-             .footer .d-flex .social ul {
-                 width: 100%;
-             }
-             
-             .desktop-copy {
-                 color: #F5F2B1;
-                 padding-top: 2vh;
-                 padding-bottom: 1vw;
-                 margin-bottom: 0vw !important;
-                 text-align: center;
-             }
-             
-             .hide-bottom {
-                 display: none;
-             }
-             
-             .bi {
-                 color: #F5F2B1;
-                 width: 6vw;
-             }
-             
-             @media (min-width: 200px) {
-                 .desktop-footer {
-                     display: none;
-                 }
-                 .d-flex .download .p {
-                     text-align: center;
-                     padding-right: 3vw
-                 }
-                 @media (min-width: 993px) {
-                     .accordion {
-                         display: none;
-                     }
-                     .desktop-footer {
-                         display: contents;
-                     }
-                     .desktop-footer a {
-                         text-decoration: none;
-                         color: #333333;
-                     }
-                     .footer p {
-                         color: #333333;
-                     }
-                     .d-flex .service ul {
-                         width: 18vw;
-                     }
-                     .d-flex .quick ul {
-                         width: 25vw;
-                     }
-                     .bg-teal {
-                         background: #97C45F;
-                     }
-                     .desktop-copy {
-                         background-color: #36676A;
-                         color: #F5F2B1;
-                     }
-                     .hide-bottom {
-                         display: contents;
-                     }
-                     .p-bottom {
-                         padding-left: 29vw;
-                         padding-right: 25vw;
-                     }
-                     .social .p {
-                         color: #333333;
-                         text-align: left;
-                     }
-                     .d-flex li a svg {
-                         color: #333333;
-                     }
-                     .footer .d-flex img {
-                         width: 10vw;
-                         max-height: 30px;
-                     }
-                     .footer .d-flex .social ul {
-                         width: 0;
-                     }
-                     .accordion-body ul {
-                         margin-left: 1vw;
-                     }
-                     .bi {
-                         width: 3vw;
-                     }
-                 }
+/*Accordian*/
+
+.accordion-button:not(.collapsed),
+.footer .accordion-button:focus {
+    color: #4B6E43;
+    background-color: rgba(151, 196, 95, 0.50);
+    border-color: #4B6E43;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url("../img/icons/1Vector.svg");
+}
+
+.accordion-body {
+    background-color: rgba(151, 196, 95, .3);
+}
+
+.accordion-body a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.accordion-body a:hover {
+    color: rgba(151, 196, 95, 0.50)
+}
+
+/* Footer */
+
+.footer {
+    font-family: 'Sen', sans-serif;
+}
+
+.footer p {
+    color: #F5F2B1;
+}
+
+.footer .d-flex img {
+    width: 22vw;
+    max-height: 30px;
+    padding-right: 1vw;
+}
+
+.footer .d-flex .p {
+    margin-bottom: 0.5vh !important;
+}
+
+.footer .d-flex .social,
+.footer .d-flex .download {
+    width: 52vw;
+    max-width: 300px;
+}
+
+.footer .d-flex .social ul {
+    width: 100%;
+}
+
+.desktop-copy {
+    color: #F5F2B1;
+    padding-top: 2vh;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw !important;
+    text-align: center;
+}
+
+.hide-bottom {
+    display: none;
+}
+
+.bi {
+    color: #F5F2B1;
+    width: 6vw;
+}
+
+@media (min-width: 200px) {
+    .desktop-footer {
+        display: none;
+    }
+
+    .d-flex .download .p {
+        text-align: center;
+        padding-right: 3vw;
+    }
+
+    @media (min-width: 993px) {
+        .accordion {
+            display: none;
+        }
+
+        .desktop-footer {
+            display: contents;
+        }
+
+        .desktop-footer a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .footer p {
+            color: #333333;
+        }
+
+        .d-flex .service ul {
+            width: 18vw;
+        }
+
+        .d-flex .quick ul {
+            width: 25vw;
+        }
+
+        .bg-teal {
+            background: #97C45F;
+        }
+
+        .desktop-copy {
+            background-color: #36676A;
+            color: #F5F2B1;
+        }
+
+        .hide-bottom {
+            display: contents;
+        }
+
+        .p-bottom {
+            padding-left: 29vw;
+            padding-right: 25vw;
+        }
+
+        .social .p {
+            color: #333333;
+            text-align: left;
+        }
+
+        .d-flex li a svg {
+            color: #333333;
+        }
+
+        .footer .d-flex img {
+            width: 10vw;
+            max-height: 30px;
+        }
+
+        .footer .d-flex .social ul {
+            width: 0;
+        }
+
+        .accordion-body ul {
+            margin-left: 1vw;
+        }
+
+        .bi {
+            width: 3vw;
+        }
+    }

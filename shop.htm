@@ -18,6 +18,8 @@
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/main.css">
+     <!-- font-awesome ( lol yes i used this. ) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -25,8 +27,8 @@
     <!-- Header -->
     <header class="header">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-            <div class="container-fluid d-flex flex-row-reverse align-items-start relative pt-5 pb-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid d-flex flex-row-reverse align-items-start relative pt-5 pb-4">
 
                 <!-- Cart Button -->
                 <button class="button btn-none"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="27"
@@ -117,21 +119,24 @@
     <div class="filter absolute">
         <form method="post" action="/Tests/Post/">
             <fieldset>
-                <h3>Catagories</h3>
-                <h4>Fruit</h4>
-                <input type="checkbox"> apples<br>
+                <div class=filter-list>
+                <h4 class="h5 pb-1">Categories</h4>
+                <h4 class="h5 pt-3">Fruits</h4>
+                <input type="checkbox" class="checkmark"> apples<br>
                 <input type="checkbox"> bananas<br>
                 <input type="checkbox"> oranges<br>
                 <input type="checkbox"> kiwi<br>
                 <input type="checkbox"> strawberries<br>
                 <input type="checkbox"> blueberries<br>
-                <h4>Vegetables</h4>
+
+                <h4 class="h5 pt-5">Vegetables</h4>
                 <input type="checkbox"> carrots<br>
                 <input type="checkbox"> cucumber<br>
                 <input type="checkbox"> totmatos<br>
                 <input type="checkbox"> peppers<br>
                 <input type="checkbox"> garlic<br>
                 <input type="checkbox"> lettuce<br>
+            </div>
             </fieldset>
         </form>
     </div>
@@ -141,9 +146,9 @@
     <section class="section mobileSearch relative mx-3 mb-3 ">
         <form class="d-flex">
             <input class="form-control me-2 shop-search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-none pe-2" type="submit">
+            <button class="btn btn-hide btn-none pe-2" type="submit">
         <svg xmlns="http://www.w3.org/2000/svg" width="25"
-          height="28.37" fill="currentColor" class="icon pt-2" viewBox="0 0 16 16">
+          height="28.37" fill="currentColor" class="icon hide pt-2" viewBox="0 0 16 16">
           <path
             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
         </svg>
@@ -261,7 +266,7 @@
                 </div>
             </div>
 
-            <div class=" social d-flex flex-column align-items-center ">
+            <div class=" social d-flex flex-column align-items-center justify-content-center">
                 <p class="p ">Follow Us</p>
                 <ul class="d-flex justify-content-around align-items-center p-0 ">
                     <li>
