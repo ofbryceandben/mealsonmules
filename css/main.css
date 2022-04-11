@@ -228,6 +228,7 @@ h6 {
 
 .header .navbar .container-fluid .collapse {
     z-index: 999;
+    height: 200px;
 }
 
 .header .navbar .container-fluid .collapse .form-control {
@@ -916,9 +917,9 @@ s
         position: absolute;
         top: 150px;
         z-index: -1;
-        background-color: #82c2a8;
+        background-color: #82c2a86e;
         width: 18vw;
-        height: 100%;
+        height: 80%;
         font-family: 'Sen', sans-serif;
     }
 
