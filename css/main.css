@@ -228,7 +228,7 @@ h6 {
 
 .header .navbar .container-fluid .collapse {
     z-index: 999;
-    height: 200px;
+
 }
 
 .header .navbar .container-fluid .collapse .form-control {
@@ -529,7 +529,11 @@ s
     }
 
     .explain .d-flex .h4 {
-        margin-top: 21vw;
+        margin-top: 9vh;
+    }
+
+    .explain .d-flex .h4.wd {
+        margin-top: 5vh;
     }
 }
 
