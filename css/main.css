@@ -272,18 +272,6 @@ h6 {
 ========================================*/
 
 
-@media (min-width: 1200px) {
-    .appDwnld .p {
-        font-size: 26px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .appDwnld .p {
-        font-size: 35px;
-    }
-}
-
 /* ======================================
 7. How It Works Section
 ========================================*/
@@ -352,66 +340,7 @@ s
     left: 36%;
 }
 
-@media (min-width:993px) {
-    .explain .browse {
-        left: -23vw;
-        top: 5vw;
-    }
 
-    .explain .browse .arrow {
-        right: 15vw;
-        top: 4vw;
-        transform: rotate(-60deg)
-    }
-
-    .explain .d-flex .arrow {
-        height: 200px;
-    }
-
-    .explain .add {
-        right: 1vw;
-        top: -15vh;
-    }
-
-    .explain .add .arrow {
-        left: 8vw;
-        top: 5vw;
-        height: 20vw;
-        transform: rotate(60deg);
-
-    }
-
-    .explain .add .bg-ltgrn {
-        top: 10vw;
-        left: 60%;
-    }
-
-    .explain .deliver {
-        top: -20vh;
-        left: -20vw;
-    }
-
-    .add img {
-        padding-left: 50vw;
-    }
-
-    .explain .add .bg-ltgrn {
-        right: 10vw;
-    }
-
-    .text-padding {
-        position: relative;
-        left: 25vw;
-    }
-
-    .explain .d-flex .h4 {
-        margin-top: 9vh;
-    }
-
-    .explain .d-flex .h4.wd {
-        margin-top: 5vh;
-    }
-}
 
 /* ======================================
 8. Categories Section
@@ -509,25 +438,6 @@ s
     font-size: 16px;
 }
 
-@media (min-width: 993px) {
-    .specials .special-carousel .items {
-        width: 300px;
-        height: 375px;
-        margin-left: 70px;
-    }
-
-    .specials-center {
-        position: relative;
-        left: -23px;
-        text-align: center;
-        font-family: 'Sen', sans-serif;
-        font-size: 16px;
-    }
-
-    .specials .special-carousel .items img {
-        height: 250px;
-    }
-}
 
 /* ======================================
 10. About Section
@@ -759,7 +669,109 @@ s
     background-color: #F4F4F4;
 }
 
+
+
+
+/* ======================================
+12. Footer/Accordian
+========================================*/
+/*Accordian*/
+
+.accordion-button:not(.collapsed),
+.footer .accordion-button:focus {
+    color: #4B6E43;
+    background-color: rgba(151, 196, 95, 0.50);
+    border-color: #4B6E43;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url("../img/icons/1Vector.svg");
+}
+
+.accordion-body {
+    background-color: rgba(151, 196, 95, .3);
+}
+
+.accordion-body a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.accordion-body a:hover {
+    color: rgba(151, 196, 95, 0.50)
+}
+
+/* Footer */
+
+.footer {
+    font-family: 'Sen', sans-serif;
+}
+
+.footer p {
+    color: #F5F2B1;
+}
+
+.footer .d-flex img {
+    width: 22vw;
+    max-height: 30px;
+    padding-right: 1vw;
+}
+
+.footer .d-flex .p {
+    margin-bottom: 0.5vh !important;
+}
+
+.footer .d-flex .social,
+.footer .d-flex .download {
+    width: 52vw;
+    max-width: 300px;
+}
+
+.footer .d-flex .social ul {
+    width: 100%;
+}
+
+.desktop-copy {
+    color: #F5F2B1;
+    padding-top: 2vh;
+    padding-bottom: 1vw;
+    margin-bottom: 0vw !important;
+    text-align: center;
+}
+
+.hide-bottom {
+    display: none;
+}
+
+.bi {
+    color: #F5F2B1;
+    width: 6vw;
+}
+
+/* ======================================
+13. Media Queries
+========================================*/
+
 @media (min-width: 200px) {
+    .img.d {
+        display: none;
+    }
+
+    .nav-item.d {
+        display: none;
+    }
+
+    .mob-app-d-hide {
+        display: none;
+    }
+
+    .home-p {
+        margin: 30px;
+    }
+
+    /* shop filter section 200px*/
     .filter.absolute {
         display: none;
     }
@@ -775,10 +787,204 @@ s
     .bi-heart {
         display: none;
     }
+/* footer section 200px */
+    .desktop-footer {
+        display: none;
+    }
+
+    .d-flex .download .p {
+        text-align: center;
+        padding-right: 3vw;
+    }
 }
 
+@media (min-width: 993px) {
 
-@media (min-width: 992px) {
+    .h1 {
+        font-size: 40px;
+        font-family: 'Staatliches', cursive;
+    }
+    .img.m {
+        display: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #36676A;
+        font-size: 18px;
+    }
+
+    .nav-item.d {
+        display: contents;
+        text-decoration: none;
+    }
+
+    .nav {
+        font-family: 'Sen', sans-serif;
+        background-color: #36676A;
+    }
+
+    .nav-link.d {
+        color: #F5F2B1 !important;
+
+    }
+
+    .img.d {
+        display: block;
+        width: 150px;
+        padding-top: 20px
+    }
+
+    .button {
+        margin-top: 3.8vh;
+    }
+
+    .d-flex .about-search {
+        background-color: rgba(151, 196, 95, .3);
+    }
+
+    .d-flex .bi-search {
+        padding-right: 20px;
+        color: #4B6E43;
+    }
+    .bi.bi-cart-fill {
+
+        position: absolute;
+        top: 38%;
+        right: 0%;
+        z-index: 1001;
+    }
+
+    /* mobil eapp download section */
+
+    .home-p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .p{
+        font-size: 30px;
+        font-family: 'Sen', sans-serif;
+    }
+
+    .h2.orange {
+        font-size: 60px;
+    }
+
+    .d-flex .download .p {
+        font-size: 20px;
+        text-align: left;
+        width: 463px;
+
+    }
+    .social .p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* Mobile Download section */
+
+    .desk-center {
+        margin: 5% 10% 5% 10%;
+    }
+
+    .mob-app-d-hide {
+        padding-right: 25px;
+        display: block;
+        height: 30vh;
+
+    }
+
+    .btn-img {
+        height: 6vh;
+    }
+
+    .appDwnld .p {
+        font-size: 25px;
+    }
+
+    .af {
+        text-align: left;
+    }
+
+    /* HOW IT WORKS SECTION*/
+    .explain .browse {
+        left: -23vw;
+        top: 5vw;
+    }
+
+    .explain .browse .arrow {
+        right: 15vw;
+        top: 4vw;
+        transform: rotate(-60deg)
+    }
+
+    .explain .d-flex .arrow {
+        height: 200px;
+    }
+
+    .explain .add {
+        right: 1vw;
+        top: -15vh;
+    }
+
+    .explain .add .arrow {
+        left: 8vw;
+        top: 5vw;
+        height: 20vw;
+        transform: rotate(60deg);
+
+    }
+
+    .explain .add .bg-ltgrn {
+        top: 10vw;
+        left: 60%;
+    }
+
+    .explain .deliver {
+        top: -20vh;
+        left: -20vw;
+    }
+
+    .add img {
+        padding-left: 50vw;
+    }
+
+    .explain .add .bg-ltgrn {
+        right: 10vw;
+    }
+
+    .text-padding {
+        position: relative;
+        left: 25vw;
+    }
+
+    .explain .d-flex .h4 {
+        margin-top: 9vh;
+    }
+
+    .explain .d-flex .h4.wd {
+        margin-top: 5vh;
+    }
+/* weekly specials seciton */
+    .specials .special-carousel .items {
+        width: 300px;
+        height: 375px;
+        margin-left: 70px;
+    }
+
+    .specials-center {
+        position: relative;
+        left: -23px;
+        text-align: center;
+        font-family: 'Sen', sans-serif;
+        font-size: 16px;
+    }
+
+    .specials .special-carousel .items img {
+        height: 250px;
+    }
+
+    /* Shop section*/
     .shop.bnr {
         background-image: none;
         height: 20vh;
@@ -879,128 +1085,7 @@ s
     .hero {
         font-size: 50px;
     }
-}
-
-@media (min-width: 1300px) {
-
-
-    .card {
-        width: 376px;
-    }
-}
-
-
-@media (min-width: 1500px) {
-    .filter-list {
-        font-size: 26px;
-
-    }
-
-    .hero {
-        position: relative;
-        left: 6vw;
-        font-size: 60px;
-    }
-
-    .card {
-        width: 392px;
-    }
-
-    .products {
-        margin-left: 26vw;
-    }
-}
-
-/* ======================================
-12. Footer/Accordian
-========================================*/
-/*Accordian*/
-
-.accordion-button:not(.collapsed),
-.footer .accordion-button:focus {
-    color: #4B6E43;
-    background-color: rgba(151, 196, 95, 0.50);
-    border-color: #4B6E43;
-    box-shadow: none;
-}
-
-.accordion-button:not(.collapsed)::after,
-.accordion-button::after {
-    background-image: url("../img/icons/1Vector.svg");
-}
-
-.accordion-body {
-    background-color: rgba(151, 196, 95, .3);
-}
-
-.accordion-body a {
-    color: #333333;
-    text-decoration: none;
-}
-
-.accordion-body a:hover {
-    color: rgba(151, 196, 95, 0.50)
-}
-
-/* Footer */
-
-.footer {
-    font-family: 'Sen', sans-serif;
-}
-
-.footer p {
-    color: #F5F2B1;
-}
-
-.footer .d-flex img {
-    width: 22vw;
-    max-height: 30px;
-    padding-right: 1vw;
-}
-
-.footer .d-flex .p {
-    margin-bottom: 0.5vh !important;
-}
-
-.footer .d-flex .social,
-.footer .d-flex .download {
-    width: 52vw;
-    max-width: 300px;
-}
-
-.footer .d-flex .social ul {
-    width: 100%;
-}
-
-.desktop-copy {
-    color: #F5F2B1;
-    padding-top: 2vh;
-    padding-bottom: 1vw;
-    margin-bottom: 0vw !important;
-    text-align: center;
-}
-
-.hide-bottom {
-    display: none;
-}
-
-.bi {
-    color: #F5F2B1;
-    width: 6vw;
-}
-
-@media (min-width: 200px) {
-    .desktop-footer {
-        display: none;
-    }
-
-    .d-flex .download .p {
-        text-align: center;
-        padding-right: 3vw;
-    }
-}
-
-@media (min-width: 993px) {
+/* Footer section 992px*/
     .accordion {
         display: none;
     }
@@ -1076,130 +1161,12 @@ s
     }
 }
 
-
-/* ======================================
-13. Media Queries
-========================================*/
-
-@media (min-width: 200px) {
-    .img.d {
-        display: none;
-    }
-
-    .nav-item.d {
-        display: none;
-    }
-
-    .mob-app-d-hide {
-        display: none;
-    }
-
-    .home-p {
-        margin: 30px;
-    }
+@media (min-width: 1300px){
+.card {
+    width: 376px;
 }
 
-@media (min-width: 993px) {
 
-    .h1 {
-        font-size: 40px;
-        font-family: 'Staatliches', cursive;
-    }
-    .img.m {
-        display: none;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: #36676A;
-        font-size: 18px;
-    }
-
-    .nav-item.d {
-        display: contents;
-        text-decoration: none;
-    }
-
-    .nav {
-        font-family: 'Sen', sans-serif;
-        background-color: #36676A;
-    }
-
-    .nav-link.d {
-        color: #F5F2B1 !important;
-
-    }
-
-    .img.d {
-        display: block;
-        width: 150px;
-        padding-top: 20px
-    }
-
-    .button {
-        margin-top: 3.8vh;
-    }
-
-    .d-flex .about-search {
-        background-color: rgba(151, 196, 95, .3);
-    }
-
-    .d-flex .bi-search {
-        padding-right: 20px;
-        color: #4B6E43;
-    }
-    .bi.bi-cart-fill {
-
-        position: absolute;
-        top: 49%;
-        right: 0%;
-        z-index: 1001;
-    }
-
-    .p{
-        font-size: 30px;
-        font-family: 'Sen', sans-serif;
-    }
-
-    .h2.orange {
-        font-size: 60px;
-    }
-
-    .d-flex .download .p {
-        font-size: 20px;
-        text-align: left;
-        width: 463px;
-
-    }
-    .social .p {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    /* Mobile Download section */
-
-    .desk-center {
-        margin: 5% 10% 5% 10%;
-    }
-
-    .mob-app-d-hide {
-        padding-right: 25px;
-        display: block;
-        height: 30vh;
-
-    }
-
-    .btn-img {
-        height: 6vh;
-    }
-
-    .appDwnld .p {
-        font-size: 25px;
-    }
-
-    .af {
-        text-align: left;
-    }
-}
 
 
 @media (min-width: 1400px) {
@@ -1237,6 +1204,27 @@ s
     .explain .d-flex .arrow {
         height: 300px;
     }
+
+/* fiilter list on shop page 1500px  */
+    .filter-list {
+        font-size: 26px;
+
+    }
+
+    .hero {
+        position: relative;
+        left: 6vw;
+        font-size: 60px;
+    }
+
+    .card {
+        width: 392px;
+    }
+
+    .products {
+        margin-left: 26vw;
+    }
+}
 }
 @media (min-width: 2000px) {
 
@@ -1377,6 +1365,4 @@ s
 
         font-size: 90px;
     }
-
-
 }
